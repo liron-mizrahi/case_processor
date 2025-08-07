@@ -1,6 +1,6 @@
 import json
 import clr
-from System import UInt64, Array # type: ignore
+from System import UInt64, Array, Tuple # type: ignore
 from pathlib import Path
 import re
 import sys, os
@@ -163,6 +163,8 @@ class PyDli():
                     else: 
                         lst.append(l)
                 out[elem_name] = lst
+            elif isinstance(elem, Tuple): 
+                pass
             elif 'DliNetInterface' in str(type(elem)): 
                 out[elem_name] =self.read_generic(elem)
             else:  

@@ -90,11 +90,13 @@ def pht_run(params: dict):
     Returns:
         bool: True if successful.
     """
-    print('Running pht_run')
-    print(params)
-    case_dir = params.get('path')  # Directory for case data
-    pht = PHT_runner(dataDir=case_dir)  # Initialize PHT_runner
-    print(pht)  # Print the PHT_runner instance
+
+    pht = PHT_runner(dataDir= params.get('dataDir'), 
+                     label=params.get('label'), 
+                     enable_traces=params.get('enable_traces'))
+    print(pht)
+    pht.run()
+
     return True
 
 
