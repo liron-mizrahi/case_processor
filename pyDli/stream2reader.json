@@ -1,0 +1,54 @@
+{
+"tracettalgupdate2" : {
+                        "reader" : "TraceTTAlgUpdateRead", 
+                        "parser" : "read_tracettalgupdate2", 
+                        "writer" : ""
+                      }, 
+"rawimpedance_recording_file": {
+                        "reader" : "RawImpedanceRead", 
+                        "parser" : "read_rawImpedance", 
+                        "writer" : ""
+                      }, 
+"tracettvoltageandcurrent": {
+                        "reader" : "TraceVoltageAndCurrentRead", 
+                        "parser" : "read_tracettvoltageandcurrent", 
+                        "writer" : ""
+                      }, 
+"tracettimpedancecalculation": {
+                        "reader" : "TraceImpedanceCalculationRead", 
+                        "parser" : "read_tracettimpedancecalculation", 
+                        "writer" : ""
+                      }, 
+
+"rawttvoltage_recording_file": {
+                        "reader" : "RawTTVoltageRead", 
+                        "parser" : "read_rawttvoltage_recording_file", 
+                        "writer" : ""
+                      },
+"tracetpialgupdatebim": {
+                        "reader" : "TraceTpiAlgUpdateBimRead", 
+                        "parser" : "read_tracetpialgupdatebim", 
+                        "writer" : ""
+                      },
+"incoming_timestamp_logger": {
+                        "reader" : "IncomingTimestampRead", 
+                        "parser" : "read_incoming_timestamp_logger", 
+                        "writer" : ""
+                      }, 
+"tracettalgregiongrowing2": {
+                        "reader" : "TraceTTAlgRegionGrowingRead", 
+                        "parser" : "", 
+                        "writer" : ""
+                      }, 
+"tracetpizeroing" : {
+                        "reader" : "TraceTpiZeroingRead", 
+                        "parser" : "read_tracetpizeroing", 
+                        "writer" : ""
+                      },
+"catheterpositions" : {
+                        "reader" : "CatheterTreeRead", 
+                        "parser" : "read_generic", 
+                        "writer" : ""
+                      }
+    
+}

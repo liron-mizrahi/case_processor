@@ -1,0 +1,74 @@
+2025-08-06 12:12:51,419 - INFO - Logging initialized for pyDli class
+2025-08-06 12:12:51,434 - INFO - set dliVersion : 8.1.1.944
+2025-08-06 12:17:23,817 - INFO - Logging initialized for pyDli class
+2025-08-06 12:17:23,833 - INFO - set dliVersion : 8.1.1.944
+2025-08-06 12:17:50,949 - INFO - Logging initialized for pyDli class
+2025-08-06 12:17:50,949 - INFO - set dliVersion : False
+2025-08-06 12:18:26,283 - INFO - Logging initialized for pyDli class
+2025-08-06 12:18:26,283 - INFO - set dliVersion : False
+2025-08-06 12:35:04,198 - INFO - Logging initialized for pyDli class
+2025-08-06 12:35:04,467 - INFO - set dliVersion : 8.1.1.944
+2025-08-06 12:35:05,959 - INFO - load DLI V8.1.1.944
+2025-08-06 12:35:19,805 - INFO - Logging initialized for pyDli class
+2025-08-06 12:35:20,054 - INFO - set dliVersion : 8.1.1.944
+2025-08-06 12:35:21,211 - INFO - load DLI V8.1.1.944
+2025-08-06 12:35:21,216 - INFO - find_stream_path: search for stream_path: {stream_label}
+2025-08-06 12:35:24,516 - INFO - find_stream_path: find : {num_of_streams} streams of {stream_label}
+2025-08-06 12:35:34,266 - INFO - Logging initialized for pyDli class
+2025-08-06 12:35:34,506 - INFO - set dliVersion : 8.1.1.944
+2025-08-06 12:35:35,677 - INFO - load DLI V8.1.1.944
+2025-08-06 12:35:35,683 - INFO - find_stream_path: search for stream_path: {stream_label}
+2025-08-06 12:35:38,672 - INFO - find_stream_path: find : {num_of_streams} streams of {stream_label}
+2025-08-06 12:35:40,818 - INFO - use TraceTTAlgUpdateRead to read tracettalgupdate2
+2025-08-06 12:35:51,201 - INFO - Logging initialized for pyDli class
+2025-08-06 12:35:51,474 - INFO - set dliVersion : 8.1.1.944
+2025-08-06 12:35:52,624 - INFO - load DLI V8.1.1.944
+2025-08-06 12:35:52,628 - INFO - find_stream_path: search for stream_path: {stream_label}
+2025-08-06 12:35:55,765 - INFO - find_stream_path: find : {num_of_streams} streams of {stream_label}
+2025-08-06 12:35:58,538 - INFO - use TraceTTAlgUpdateRead to read tracettalgupdate2
+2025-08-06 12:36:09,780 - INFO - Logging initialized for pyDli class
+2025-08-06 12:36:09,782 - INFO - set dliVersion : 8.1.1.944
+2025-08-06 12:43:43,396 - INFO - Logging initialized for pyDli class
+2025-08-06 12:43:43,396 - INFO - set dliVersion : 8.1.1.944
+2025-08-06 12:50:19,202 - INFO - Logging initialized for pyDli class
+2025-08-06 12:50:19,202 - INFO - set dliVersion : 8.1.1.944
+2025-08-06 12:50:33,897 - INFO - Logging initialized for pyDli class
+2025-08-06 12:50:33,900 - INFO - set dliVersion : 8.1.1.944
+2025-08-06 12:51:21,678 - INFO - Logging initialized for pyDli class
+2025-08-06 12:51:21,678 - INFO - set dliVersion : 8.1.1.944
+2025-08-06 12:51:42,874 - INFO - Logging initialized for pyDli class
+2025-08-06 12:51:42,874 - INFO - set dliVersion : 8.1.1.944
+2025-08-06 12:52:33,868 - INFO - Logging initialized for pyDli class
+2025-08-06 12:52:33,868 - INFO - set dliVersion : 8.1.1.944
+2025-08-06 13:00:51,944 - INFO - Logging initialized for pyDli class
+2025-08-06 13:00:51,944 - INFO - set dliVersion : 8.1.1.944
+2025-08-06 13:03:38,394 - INFO - Logging initialized for pyDli class
+2025-08-06 13:03:38,394 - INFO - set dliVersion : 8.1.1.944
+2025-08-06 13:03:54,831 - INFO - Logging initialized for pyDli class
+2025-08-06 13:03:54,832 - INFO - set dliVersion : 8.1.1.944
+2025-08-06 13:04:57,810 - INFO - Logging initialized for pyDli class
+2025-08-06 13:04:57,810 - INFO - set dliVersion : 8.1.1.944
+2025-08-06 13:06:08,876 - INFO - Logging initialized for pyDli class
+2025-08-06 13:06:08,876 - INFO - set dliVersion : 8.1.1.944
+2025-08-06 13:07:30,453 - INFO - Logging initialized for pyDli class
+2025-08-06 13:07:30,453 - INFO - set dliVersion : 8.1.1.944
+2025-08-06 13:07:52,867 - INFO - Logging initialized for pyDli class
+2025-08-06 13:07:52,867 - INFO - set dliVersion : 8.1.1.944
+2025-08-06 13:49:56,447 - INFO - Logging initialized for pyDli class
+2025-08-06 13:49:56,447 - INFO - set dliVersion : 8.1.1.944
+2025-08-06 14:14:13,206 - INFO - Logging initialized for pyDli class
+2025-08-06 14:14:13,206 - INFO - set dliVersion : 8.1.1.944
+2025-08-07 14:49:47,392 - INFO - Logging initialized for pyDli class
+2025-08-07 14:49:47,395 - INFO - set dliVersion : 8.1.1.944
+2025-08-07 14:57:06,615 - INFO - Logging initialized for pyDli class
+2025-08-07 14:57:06,617 - INFO - set dliVersion : 8.1.1.944
+2025-08-07 15:50:55,179 - INFO - Logging initialized for pyDli class
+2025-08-07 15:50:57,233 - INFO - set dliVersion : 8.1.1.944
+2025-08-07 15:50:58,803 - INFO - load DLI V8.1.1.944
+2025-08-07 15:50:58,811 - INFO - find_stream_path: search for stream_path: {stream_label}
+2025-08-07 15:51:02,216 - INFO - find_stream_path: find : {num_of_streams} streams of {stream_label}
+2025-08-07 15:51:05,605 - INFO - use TraceTTAlgUpdateRead to read tracettalgupdate2
+2025-08-07 15:51:41,586 - INFO - Logging initialized for pyDli class
+2025-08-07 15:51:41,588 - INFO - set dliVersion : 8.1.1.944
+2025-08-07 15:52:14,867 - INFO - Logging initialized for pyDli class
+2025-08-07 15:52:14,871 - INFO - set dliVersion : 8.1.1.944

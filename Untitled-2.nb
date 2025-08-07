@@ -1,0 +1,587 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Wolfram 14.1' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       154,          7]
+NotebookDataLength[     24439,        579]
+NotebookOptionsPosition[     22840,        540]
+NotebookOutlinePosition[     23290,        557]
+CellTagsIndexPosition[     23247,        554]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{"Define", " ", "the", " ", "URL", " ", "and", " ", "endpoint"}], 
+   " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+    "url", "=", 
+     "\"\<http://localhost:5555/api/task/send-task/tasks.add\>\""}], ";"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+     RowBox[{"Create", " ", "the", " ", "base64"}], "-", 
+     RowBox[{"encoded", " ", "credentials"}]}], " ", "*)"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"credentials", "=", 
+     RowBox[{"BaseEncode", "[", 
+      RowBox[{
+       RowBox[{"ByteArray", "[", 
+        RowBox[{"ToCharacterCode", "[", "\"\<liron:123\>\"", "]"}], "]"}], 
+       ",", "\"\<Base64\>\""}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+    "Set", " ", "up", " ", "the", " ", "headers", " ", "with", " ", "basic", 
+     " ", "authentication"}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"headers", "=", 
+     RowBox[{"<|", "\[IndentingNewLine]", "   ", 
+      RowBox[{
+       RowBox[{"\"\<Accept\>\"", "->", "\"\<application/json\>\""}], ",", 
+       "\[IndentingNewLine]", "   ", 
+       RowBox[{
+       "\"\<Accept-Encoding\>\"", "->", "\"\<gzip, deflate, compress\>\""}], 
+       ",", "\[IndentingNewLine]", "   ", 
+       RowBox[{
+       "\"\<Content-Type\>\"", "->", 
+        "\"\<application/json; charset=utf-8\>\""}], ",", 
+       "\[IndentingNewLine]", "   ", 
+       RowBox[{"\"\<Authorization\>\"", "->", 
+        RowBox[{"\"\<Basic \>\"", " ", "<>", " ", "credentials"}]}]}], 
+      "\[IndentingNewLine]", "|>"}]}], ";"}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+    "Define", " ", "the", " ", "body", " ", "of", " ", "the", " ", 
+     "request"}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"body", "=", 
+     RowBox[{"ExportString", "[", 
+      RowBox[{
+       RowBox[{"<|", 
+        RowBox[{"\"\<args\>\"", "->", 
+         RowBox[{"{", 
+          RowBox[{"1", ",", "2"}], "}"}]}], "|>"}], ",", "\"\<JSON\>\""}], 
+      "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+    "Create", " ", "and", " ", "execute", " ", "the", " ", "HTTP", " ", 
+     "request"}], " ", "*)"}], "\n", 
+   RowBox[{
+    RowBox[{"request", "=", 
+     RowBox[{"HTTPRequest", "[", 
+      RowBox[{"url", ",", 
+       RowBox[{"<|", "\[IndentingNewLine]", "   ", 
+        RowBox[{
+         RowBox[{"\"\<Method\>\"", "->", "\"\<POST\>\""}], ",", 
+         "\[IndentingNewLine]", "   ", 
+         RowBox[{"\"\<Headers\>\"", "->", "headers"}], ",", 
+         "\[IndentingNewLine]", "   ", 
+         RowBox[{"\"\<Body\>\"", "->", "body"}]}], "\[IndentingNewLine]", 
+        "|>"}]}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+    "Execute", " ", "the", " ", "request", " ", "and", " ", "get", " ", "the",
+      " ", "response"}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"response", "=", 
+     RowBox[{"URLRead", "[", 
+      RowBox[{"request", ",", "\"\<Body\>\""}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", "response"}]}]], "Input",
+ CellChangeTimes->{{3.963548243041956*^9, 3.963548249305168*^9}, 
+   3.9635488429523525`*^9, {3.9635488865414467`*^9, 3.9635488912499275`*^9}, {
+   3.9635497139603233`*^9, 3.963549723879942*^9}, {3.9635498159951878`*^9, 
+   3.9635498188708344`*^9}, {3.9635511872383747`*^9, 3.9635512035111694`*^9}},
+ CellLabel->"In[40]:=",ExpressionUUID->"9c02c101-b4c3-fa46-ae61-480dd2e6e596"],
+
+Cell[BoxData["\<\"{\\\"task-id\\\": \
+\\\"cdc255ac-f67f-4564-876b-7ba4362986a3\\\", \\\"state\\\": \\\"PENDING\\\"}\
+\"\>"], "Output",
+ CellChangeTimes->{
+  3.9635486060165844`*^9, 3.963548882808174*^9, 3.9635489480807323`*^9, {
+   3.9635497080832005`*^9, 3.9635497181238136`*^9}, {3.963549822478157*^9, 
+   3.9635498268589287`*^9}, 3.9635509473459053`*^9, 3.963551156664425*^9, 
+   3.9635512066075897`*^9},
+ CellLabel->"Out[46]=",ExpressionUUID->"7fec8f1d-e12e-ff4b-b309-b07c7f2944ef"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["genric_task", "Section",
+ CellChangeTimes->{
+  3.9635528490803776`*^9},ExpressionUUID->"70bbea7b-a942-6946-89ff-\
+7a90c645d8d1"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{"Define", " ", "the", " ", "URL", " ", "and", " ", "endpoint"}], 
+   " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+    "url", "=", 
+     "\"\<http://localhost:5555/api/task/send-task/tasks.genric_task\>\""}], 
+    ";"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+     RowBox[{"Create", " ", "the", " ", "base64"}], "-", 
+     RowBox[{"encoded", " ", "credentials"}]}], " ", "*)"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"credentials", "=", 
+     RowBox[{"BaseEncode", "[", 
+      RowBox[{
+       RowBox[{"ByteArray", "[", 
+        RowBox[{"ToCharacterCode", "[", "\"\<liron:123\>\"", "]"}], "]"}], 
+       ",", "\"\<Base64\>\""}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+    "Set", " ", "up", " ", "the", " ", "headers", " ", "with", " ", "basic", 
+     " ", "authentication"}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"headers", "=", 
+     RowBox[{"<|", "\[IndentingNewLine]", "   ", 
+      RowBox[{
+       RowBox[{"\"\<Accept\>\"", "->", "\"\<application/json\>\""}], ",", 
+       "\[IndentingNewLine]", "   ", 
+       RowBox[{
+       "\"\<Accept-Encoding\>\"", "->", "\"\<gzip, deflate, compress\>\""}], 
+       ",", "\[IndentingNewLine]", "   ", 
+       RowBox[{
+       "\"\<Content-Type\>\"", "->", 
+        "\"\<application/json; charset=utf-8\>\""}], ",", 
+       "\[IndentingNewLine]", "   ", 
+       RowBox[{"\"\<Authorization\>\"", "->", 
+        RowBox[{"\"\<Basic \>\"", " ", "<>", " ", "credentials"}]}]}], 
+      "\[IndentingNewLine]", "|>"}]}], ";"}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+    "Define", " ", "the", " ", "body", " ", "of", " ", "the", " ", 
+     "request"}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"body", "=", 
+     RowBox[{"ExportString", "[", 
+      RowBox[{
+       RowBox[{"<|", 
+        RowBox[{"\"\<args\>\"", "->", " ", 
+         RowBox[{"{", 
+          RowBox[{"\"\<echo\>\"", ",", " ", 
+           RowBox[{"<|", 
+            RowBox[{
+             RowBox[{"\"\<x\>\"", "->", "5"}], ",", 
+             RowBox[{"\"\<y\>\"", "->", "7"}]}], "|>"}]}], "}"}]}], 
+        "\[IndentingNewLine]", "|>"}], ",", "\"\<JSON\>\""}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+    "Create", " ", "and", " ", "execute", " ", "the", " ", "HTTP", " ", 
+     "request"}], " ", "*)"}], "\n", 
+   RowBox[{
+    RowBox[{"request", "=", 
+     RowBox[{"HTTPRequest", "[", 
+      RowBox[{"url", ",", 
+       RowBox[{"<|", "\[IndentingNewLine]", "   ", 
+        RowBox[{
+         RowBox[{"\"\<Method\>\"", "->", "\"\<POST\>\""}], ",", 
+         "\[IndentingNewLine]", "   ", 
+         RowBox[{"\"\<Headers\>\"", "->", "headers"}], ",", 
+         "\[IndentingNewLine]", "   ", 
+         RowBox[{"\"\<Body\>\"", "->", "body"}]}], "\[IndentingNewLine]", 
+        "|>"}]}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+    "Execute", " ", "the", " ", "request", " ", "and", " ", "get", " ", "the",
+      " ", "response"}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"response", "=", 
+     RowBox[{"URLRead", "[", 
+      RowBox[{"request", ",", "\"\<Body\>\""}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", "response"}]}]], "Input",
+ CellChangeTimes->{{3.963548243041956*^9, 3.963548249305168*^9}, 
+   3.9635488429523525`*^9, {3.9635488865414467`*^9, 3.9635488912499275`*^9}, {
+   3.9635497139603233`*^9, 3.963549723879942*^9}, {3.9635498159951878`*^9, 
+   3.9635498188708344`*^9}, {3.9635511872383747`*^9, 3.963551262492838*^9}, {
+   3.9635513574395123`*^9, 3.9635513878880997`*^9}, {3.9635514299751816`*^9, 
+   3.9635514599626865`*^9}, {3.963551501174673*^9, 3.963551501328045*^9}, {
+   3.9635515478639145`*^9, 3.9635515518524055`*^9}, {3.963551794726534*^9, 
+   3.9635518150426903`*^9}, {3.963554584480751*^9, 3.963554585975252*^9}, {
+   3.963554806263777*^9, 3.963554809233368*^9}},
+ CellLabel->
+  "In[222]:=",ExpressionUUID->"d9d7cc90-9c29-7143-8c94-d87f5339699e"],
+
+Cell[BoxData["\<\"{\\\"task-id\\\": \
+\\\"ec706b1c-cabc-48b4-b354-2a2c255ed3ce\\\", \\\"state\\\": \\\"PENDING\\\"}\
+\"\>"], "Output",
+ CellChangeTimes->{{3.963551251802294*^9, 3.9635512648014164`*^9}, 
+   3.9635513890617943`*^9, {3.9635514387921314`*^9, 3.9635514695296097`*^9}, {
+   3.963551553933052*^9, 3.96355157518985*^9}, 3.963551816020479*^9, 
+   3.963552345624323*^9, 3.9635527662017975`*^9, 3.963552852724634*^9, 
+   3.963553048195175*^9, 3.9635532018557377`*^9, 3.963553269673868*^9, {
+   3.9635544499850864`*^9, 3.9635544538140926`*^9}, {3.963554564666132*^9, 
+   3.963554588549465*^9}, 3.9635547033719616`*^9, {3.9635547755176907`*^9, 
+   3.9635548115086823`*^9}},
+ CellLabel->
+  "Out[228]=",ExpressionUUID->"ecf868a7-bc32-0b4d-9d25-d9a688c789ce"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["dli_read", "Section",
+ CellChangeTimes->{
+  3.9635528490803776`*^9, {3.963555248272484*^9, 
+   3.963555261926548*^9}},ExpressionUUID->"9d6ed6f8-e437-4744-b9c6-\
+9bc4fdb4dbf4"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{"Define", " ", "the", " ", "URL", " ", "and", " ", "endpoint"}], 
+   " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+    "url", "=", 
+     "\"\<http://localhost:5555/api/task/send-task/tasks.dli_read\>\""}], 
+    ";"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+     RowBox[{"Create", " ", "the", " ", "base64"}], "-", 
+     RowBox[{"encoded", " ", "credentials"}]}], " ", "*)"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"credentials", "=", 
+     RowBox[{"BaseEncode", "[", 
+      RowBox[{
+       RowBox[{"ByteArray", "[", 
+        RowBox[{"ToCharacterCode", "[", "\"\<liron:123\>\"", "]"}], "]"}], 
+       ",", "\"\<Base64\>\""}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+    "Set", " ", "up", " ", "the", " ", "headers", " ", "with", " ", "basic", 
+     " ", "authentication"}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"headers", "=", 
+     RowBox[{"<|", "\[IndentingNewLine]", "   ", 
+      RowBox[{
+       RowBox[{"\"\<Accept\>\"", "->", "\"\<application/json\>\""}], ",", 
+       "\[IndentingNewLine]", "   ", 
+       RowBox[{
+       "\"\<Accept-Encoding\>\"", "->", "\"\<gzip, deflate, compress\>\""}], 
+       ",", "\[IndentingNewLine]", "   ", 
+       RowBox[{
+       "\"\<Content-Type\>\"", "->", 
+        "\"\<application/json; charset=utf-8\>\""}], ",", 
+       "\[IndentingNewLine]", "   ", 
+       RowBox[{"\"\<Authorization\>\"", "->", 
+        RowBox[{"\"\<Basic \>\"", " ", "<>", " ", "credentials"}]}]}], 
+      "\[IndentingNewLine]", "|>"}]}], ";"}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+    "Define", " ", "the", " ", "body", " ", "of", " ", "the", " ", 
+     "request"}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"body", "=", 
+     RowBox[{"ExportString", "[", 
+      RowBox[{
+       RowBox[{"<|", 
+        RowBox[{"\"\<args\>\"", "->", " ", 
+         RowBox[{"{", "\[IndentingNewLine]", "\[IndentingNewLine]", " ", 
+          RowBox[{"<|", 
+           RowBox[{
+            RowBox[{"\"\<version\>\"", "->", " ", "\"\<8.1.1.944\>\""}], ",", 
+            "\[IndentingNewLine]", 
+            RowBox[{
+            "\"\<path\>\"", "->", " ", 
+             "\"\<L:\\\\Carto_Recording_13\\\\Carto V8 Phase 3\\\\TPI field \
+investigations\\\\274554\\\\Recordings\\\\2025.06.05_10.38.14.357\>\""}], ",",
+             "\[IndentingNewLine]", 
+            RowBox[{
+            "\"\<stream_label\>\"", "->", " ", "\"\<tracettalgupdate2\>\""}], 
+            ",", "\[IndentingNewLine]", 
+            RowBox[{
+            "\"\<output_path\>\"", "->", "\"\<C:\\\\TEMP\\\\dliDumps\>\""}], 
+            ",", "\[IndentingNewLine]", 
+            RowBox[{"\"\<tsRange\>\"", "->", " ", 
+             RowBox[{"{", 
+              RowBox[{"1000000", ",", "1010000"}], "}"}]}], ",", " ", 
+            "\[IndentingNewLine]", 
+            RowBox[{"\"\<max_workers\>\"", "->", " ", "4"}]}], 
+           "\[IndentingNewLine]", "|>"}], "\[IndentingNewLine]", 
+          "\[IndentingNewLine]", "}"}]}], "\[IndentingNewLine]", "|>"}], ",", 
+       "\"\<JSON\>\""}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+    "Create", " ", "and", " ", "execute", " ", "the", " ", "HTTP", " ", 
+     "request"}], " ", "*)"}], "\n", 
+   RowBox[{
+    RowBox[{"request", "=", 
+     RowBox[{"HTTPRequest", "[", 
+      RowBox[{"url", ",", 
+       RowBox[{"<|", "\[IndentingNewLine]", "   ", 
+        RowBox[{
+         RowBox[{"\"\<Method\>\"", "->", "\"\<POST\>\""}], ",", 
+         "\[IndentingNewLine]", "   ", 
+         RowBox[{"\"\<Headers\>\"", "->", "headers"}], ",", 
+         "\[IndentingNewLine]", "   ", 
+         RowBox[{"\"\<Body\>\"", "->", "body"}]}], "\[IndentingNewLine]", 
+        "|>"}]}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+    "Execute", " ", "the", " ", "request", " ", "and", " ", "get", " ", "the",
+      " ", "response"}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"response", "=", 
+     RowBox[{"URLRead", "[", 
+      RowBox[{"request", ",", "\"\<Body\>\""}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", "response"}]}]], "Input",
+ CellChangeTimes->{{3.963548243041956*^9, 3.963548249305168*^9}, 
+   3.9635488429523525`*^9, {3.9635488865414467`*^9, 3.9635488912499275`*^9}, {
+   3.9635497139603233`*^9, 3.963549723879942*^9}, {3.9635498159951878`*^9, 
+   3.9635498188708344`*^9}, {3.9635511872383747`*^9, 3.963551262492838*^9}, {
+   3.9635513574395123`*^9, 3.9635513878880997`*^9}, {3.9635514299751816`*^9, 
+   3.9635514599626865`*^9}, {3.963551501174673*^9, 3.963551501328045*^9}, {
+   3.9635515478639145`*^9, 3.9635515518524055`*^9}, {3.963551794726534*^9, 
+   3.9635518150426903`*^9}, {3.963554584480751*^9, 3.963554585975252*^9}, {
+   3.963554806263777*^9, 3.963554809233368*^9}, {3.963555256602705*^9, 
+   3.963555415520899*^9}, {3.96355597261775*^9, 3.96355597387422*^9}, 
+   3.9635562050306473`*^9, {3.963560164318266*^9, 3.96356017510688*^9}, 
+   3.963560212474127*^9, 
+   3.96356065360907*^9},ExpressionUUID->"7d79c277-fa20-7e47-88a8-\
+29c565ae4a5f"],
+
+Cell[BoxData["\<\"{\\\"task-id\\\": \
+\\\"8d778894-5051-4f5e-be8e-71c8ff265e7f\\\", \\\"state\\\": \\\"PENDING\\\"}\
+\"\>"], "Output",
+ CellChangeTimes->{{3.963551251802294*^9, 3.9635512648014164`*^9}, 
+   3.9635513890617943`*^9, {3.9635514387921314`*^9, 3.9635514695296097`*^9}, {
+   3.963551553933052*^9, 3.96355157518985*^9}, 3.963551816020479*^9, 
+   3.963552345624323*^9, 3.9635527662017975`*^9, 3.963552852724634*^9, 
+   3.963553048195175*^9, 3.9635532018557377`*^9, 3.963553269673868*^9, {
+   3.9635544499850864`*^9, 3.9635544538140926`*^9}, {3.963554564666132*^9, 
+   3.963554588549465*^9}, 3.9635547033719616`*^9, {3.9635547755176907`*^9, 
+   3.9635548115086823`*^9}, 3.9635556796021767`*^9, 3.9635558146717033`*^9, {
+   3.963555974645813*^9, 3.963555987501974*^9}, 3.9635560836145535`*^9, 
+   3.9635562895727787`*^9, 3.963557283467642*^9, 3.963559611376425*^9, 
+   3.963559682390421*^9, 3.9635600392719746`*^9, 3.9635601174089584`*^9, 
+   3.963560180381901*^9, 3.963560215912985*^9},
+ CellLabel->
+  "Out[319]=",ExpressionUUID->"6845d558-29c9-7444-9384-e6b9d3c504ca"]
+}, Open  ]]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["pht_run", "Section",
+ CellChangeTimes->{
+  3.9635528490803776`*^9, {3.963555248272484*^9, 3.963555261926548*^9}, 
+   3.9635610276607*^9},ExpressionUUID->"113cbd25-df87-434f-ac3d-89ac3db2e7de"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"(*", " ", 
+   RowBox[{"Define", " ", "the", " ", "URL", " ", "and", " ", "endpoint"}], 
+   " ", "*)"}], "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{
+    RowBox[{
+    "url", "=", 
+     "\"\<http://localhost:5555/api/task/send-task/tasks.pht_run\>\""}], 
+    ";"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+     RowBox[{"Create", " ", "the", " ", "base64"}], "-", 
+     RowBox[{"encoded", " ", "credentials"}]}], " ", "*)"}], 
+   "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"credentials", "=", 
+     RowBox[{"BaseEncode", "[", 
+      RowBox[{
+       RowBox[{"ByteArray", "[", 
+        RowBox[{"ToCharacterCode", "[", "\"\<liron:123\>\"", "]"}], "]"}], 
+       ",", "\"\<Base64\>\""}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+    "Set", " ", "up", " ", "the", " ", "headers", " ", "with", " ", "basic", 
+     " ", "authentication"}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"headers", "=", 
+     RowBox[{"<|", "\[IndentingNewLine]", "   ", 
+      RowBox[{
+       RowBox[{"\"\<Accept\>\"", "->", "\"\<application/json\>\""}], ",", 
+       "\[IndentingNewLine]", "   ", 
+       RowBox[{
+       "\"\<Accept-Encoding\>\"", "->", "\"\<gzip, deflate, compress\>\""}], 
+       ",", "\[IndentingNewLine]", "   ", 
+       RowBox[{
+       "\"\<Content-Type\>\"", "->", 
+        "\"\<application/json; charset=utf-8\>\""}], ",", 
+       "\[IndentingNewLine]", "   ", 
+       RowBox[{"\"\<Authorization\>\"", "->", 
+        RowBox[{"\"\<Basic \>\"", " ", "<>", " ", "credentials"}]}]}], 
+      "\[IndentingNewLine]", "|>"}]}], ";"}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+    "Define", " ", "the", " ", "body", " ", "of", " ", "the", " ", 
+     "request"}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"body", "=", 
+     RowBox[{"ExportString", "[", 
+      RowBox[{
+       RowBox[{"<|", 
+        RowBox[{"\"\<args\>\"", "->", " ", 
+         RowBox[{"{", "\[IndentingNewLine]", "\[IndentingNewLine]", " ", 
+          RowBox[{"<|", 
+           RowBox[{
+            RowBox[{
+            "\"\<path\>\"", "->", " ", 
+             "\"\<L:\\\\Carto_Recording_13\\\\Carto V8 Phase 3\\\\TPI field \
+investigations\\\\274554\\\\Recordings\\\\2025.06.05_10.38.14.357\>\""}], ",",
+             "\[IndentingNewLine]", 
+            RowBox[{
+            "\"\<output_path\>\"", "->", "\"\<C:\\\\TEMP\\\\dliDumps\>\""}]}],
+            "|>"}], "\[IndentingNewLine]", "\[IndentingNewLine]", "}"}]}], 
+        "\[IndentingNewLine]", "|>"}], ",", "\"\<JSON\>\""}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+    "Create", " ", "and", " ", "execute", " ", "the", " ", "HTTP", " ", 
+     "request"}], " ", "*)"}], "\n", 
+   RowBox[{
+    RowBox[{"request", "=", 
+     RowBox[{"HTTPRequest", "[", 
+      RowBox[{"url", ",", 
+       RowBox[{"<|", "\[IndentingNewLine]", "   ", 
+        RowBox[{
+         RowBox[{"\"\<Method\>\"", "->", "\"\<POST\>\""}], ",", 
+         "\[IndentingNewLine]", "   ", 
+         RowBox[{"\"\<Headers\>\"", "->", "headers"}], ",", 
+         "\[IndentingNewLine]", "   ", 
+         RowBox[{"\"\<Body\>\"", "->", "body"}]}], "\[IndentingNewLine]", 
+        "|>"}]}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", 
+   RowBox[{"(*", " ", 
+    RowBox[{
+    "Execute", " ", "the", " ", "request", " ", "and", " ", "get", " ", "the",
+      " ", "response"}], " ", "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"response", "=", 
+     RowBox[{"URLRead", "[", 
+      RowBox[{"request", ",", "\"\<Body\>\""}], "]"}]}], ";"}], 
+   "\[IndentingNewLine]", "response"}]}]], "Input",
+ CellChangeTimes->{{3.963548243041956*^9, 3.963548249305168*^9}, 
+   3.9635488429523525`*^9, {3.9635488865414467`*^9, 3.9635488912499275`*^9}, {
+   3.9635497139603233`*^9, 3.963549723879942*^9}, {3.9635498159951878`*^9, 
+   3.9635498188708344`*^9}, {3.9635511872383747`*^9, 3.963551262492838*^9}, {
+   3.9635513574395123`*^9, 3.9635513878880997`*^9}, {3.9635514299751816`*^9, 
+   3.9635514599626865`*^9}, {3.963551501174673*^9, 3.963551501328045*^9}, {
+   3.9635515478639145`*^9, 3.9635515518524055`*^9}, {3.963551794726534*^9, 
+   3.9635518150426903`*^9}, {3.963554584480751*^9, 3.963554585975252*^9}, {
+   3.963554806263777*^9, 3.963554809233368*^9}, {3.963555256602705*^9, 
+   3.963555415520899*^9}, {3.96355597261775*^9, 3.96355597387422*^9}, 
+   3.9635562050306473`*^9, {3.963560164318266*^9, 3.96356017510688*^9}, 
+   3.963560212474127*^9, 3.96356065360907*^9, 3.96356090053034*^9, {
+   3.9635611029212837`*^9, 3.9635611269196625`*^9}, {3.963561511245119*^9, 
+   3.9635615122305145`*^9}},ExpressionUUID->"ec3fbd72-d62f-7042-a6ca-\
+af20e3d76f2e"],
+
+Cell[BoxData["\<\"{\\\"task-id\\\": \
+\\\"0b96d03b-3742-46c5-aada-d173840f53e7\\\", \\\"state\\\": \\\"PENDING\\\"}\
+\"\>"], "Output",
+ CellChangeTimes->{{3.963551251802294*^9, 3.9635512648014164`*^9}, 
+   3.9635513890617943`*^9, {3.9635514387921314`*^9, 3.9635514695296097`*^9}, {
+   3.963551553933052*^9, 3.96355157518985*^9}, 3.963551816020479*^9, 
+   3.963552345624323*^9, 3.9635527662017975`*^9, 3.963552852724634*^9, 
+   3.963553048195175*^9, 3.9635532018557377`*^9, 3.963553269673868*^9, {
+   3.9635544499850864`*^9, 3.9635544538140926`*^9}, {3.963554564666132*^9, 
+   3.963554588549465*^9}, 3.9635547033719616`*^9, {3.9635547755176907`*^9, 
+   3.9635548115086823`*^9}, 3.9635556796021767`*^9, 3.9635558146717033`*^9, {
+   3.963555974645813*^9, 3.963555987501974*^9}, 3.9635560836145535`*^9, 
+   3.9635562895727787`*^9, 3.963557283467642*^9, 3.963559611376425*^9, 
+   3.963559682390421*^9, 3.9635600392719746`*^9, 3.9635601174089584`*^9, 
+   3.963560180381901*^9, 3.963560215912985*^9, 3.9635609165865383`*^9, 
+   3.9635610295227833`*^9, {3.963561368695593*^9, 3.9635613836068363`*^9}},
+ CellLabel->
+  "Out[347]=",ExpressionUUID->"9bd66452-1082-894a-a9bd-389ba2dbe969"]
+}, Open  ]]
+}, Open  ]]
+},
+WindowSize->{868.1999999999999, 569.4},
+WindowMargins->{{Automatic, -86.39999999999986}, {
+  18.600000000000023`, Automatic}},
+FrontEndVersion->"14.1 for Microsoft Windows (64-bit) (July 16, 2024)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"53b0eec1-576b-894a-aefc-2f4dbf215123"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[576, 22, 3613, 88, 503, "Input",ExpressionUUID->"9c02c101-b4c3-fa46-ae61-480dd2e6e596"],
+Cell[4192, 112, 486, 8, 32, "Output",ExpressionUUID->"7fec8f1d-e12e-ff4b-b309-b07c7f2944ef"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4715, 125, 134, 3, 66, "Section",ExpressionUUID->"70bbea7b-a942-6946-89ff-7a90c645d8d1"],
+Cell[CellGroupData[{
+Cell[4874, 132, 4229, 99, 560, "Input",ExpressionUUID->"d9d7cc90-9c29-7143-8c94-d87f5339699e"],
+Cell[9106, 233, 760, 12, 32, "Output",ExpressionUUID->"ecf868a7-bc32-0b4d-9d25-d9a688c789ce"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[9915, 251, 181, 4, 66, "Section",ExpressionUUID->"9d6ed6f8-e437-4744-b9c6-9bc4fdb4dbf4"],
+Cell[CellGroupData[{
+Cell[10121, 259, 5308, 119, 789, "Input",ExpressionUUID->"7d79c277-fa20-7e47-88a8-29c565ae4a5f"],
+Cell[15432, 380, 1076, 16, 32, "Output",ExpressionUUID->"6845d558-29c9-7444-9384-e6b9d3c504ca"]
+}, Open  ]]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[16557, 402, 198, 3, 66, "Section",ExpressionUUID->"113cbd25-df87-434f-ac3d-89ac3db2e7de"],
+Cell[CellGroupData[{
+Cell[16780, 409, 4853, 108, 713, "Input",ExpressionUUID->"ec3fbd72-d62f-7042-a6ca-af20e3d76f2e"],
+Cell[21636, 519, 1176, 17, 32, "Output",ExpressionUUID->"9bd66452-1082-894a-a9bd-389ba2dbe969"]
+}, Open  ]]
+}, Open  ]]
+}
+]
+*)
+
