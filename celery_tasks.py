@@ -1,8 +1,12 @@
 from celery import Celery
 import os, sys
 import time
-from pyDli.mp_dli import MP_dli  # Importing MP_dli for DLI processing
+# from pyDli.mp_dli import MP_dli  # Importing MP_dli for DLI processing
+from pyDli.pyDli import PyDli
 from pht_runner.pht_runner import PHT_runner  # Importing PHT_runner for PHT processing
+from pathlib import Path
+import pickle, json
+
 
 # Celery configuration
 REDIS_URL = os.getenv("REDIS_URL", "redis://wdcoretech02:6379/0")  # Default Redis URL for Celery broker and backend
@@ -53,8 +57,9 @@ def generic_task(type: str, params: dict):
     return params
 
 
-@app.task(name='tasks.dli_read')
-def dli_read(params: dict):
+@app.task(name='tasks.dli_read', bind=True)
+def dli_read(self, params: dict):
+    self.update_state(state='PROGRESS', meta={'step': 'Initializing DLI'})
     """
     A task to read data using the MP_dli module.
     Args:
@@ -67,21 +72,48 @@ def dli_read(params: dict):
     print(params)
     required_keys = ['version', 'path', 'stream_label', 'output_path']
     if all(k in params for k in required_keys):
-        dli = MP_dli(
-            version=params.get('version'),
-            path=params.get('path'),
-            stream_label=params.get('stream_label'),
-            tsRange=params.get('tsRange', None),
-            max_workers=params.get('max_workers', 1),
-            output_path=params.get('output_path')
-        )
-        dli.process()  # Process the data
+        # dli = MP_dli(
+        #     version=params.get('version'),
+        #     path=params.get('path'),
+        #     stream_label=params.get('stream_label'),
+        #     tsRange=params.get('tsRange', None),
+        #     max_workers=params.get('max_workers', 1),
+        #     output_path=params.get('output_path')
+        # )
+        # dli.process()  # Process the data
+        stream_label = params.get('stream_label')
+        output_path = params.get('output_path')
+        output_type = params.get('output_type', 'json')
+        tsRange=params.get('tsRange', None)
+
+        dli = PyDli(caseDir=params.get('path'), 
+                    dliVersion = params.get('version', None))
+        self.update_state(state='PROGRESS', meta={'step': 'Loading DLI'})
+        dli.loadDli()
+        print(dli.get_first_last_key(stream_label=stream_label))
+        trace=dli.read(stream_label, ts_range=params.get('tsRange', None))
+        self.update_state(state='PROGRESS', meta={'step': 'Reading Data'})
+        res_dict = dli.parse(trace, stream_label=stream_label)
+        self.update_state(state='PROGRESS', meta={'step': 'Parsing Data'})
+        
+        if output_path: 
+            self.update_state(state='PROGRESS', meta={'step': 'Saving Output'})
+            if output_type == 'json':
+                output_filename = Path(output_path).joinpath(f'{stream_label}[{tsRange}].json')
+                if output_type == 'json':
+                    with open(output_filename, 'w') as fp:
+                        json.dump(res_dict, fp)
+                elif output_type == 'pk':
+                    with open(output_filename, 'wb') as fp:
+                        pickle.dump(res_dict, fp)
+
         return True
     else:
         return 'Missing params in pyDli process'
 
-@app.task(name='tasks.pht_run')
-def pht_run(params: dict):
+@app.task(name='tasks.pht_run', bind=True)
+def pht_run(self, params: dict):
+    self.update_state(state='PROGRESS', meta={'step': 'Initializing PHT process'})
     """
     A task to run the PHT process using the PHT_runner module.
     Args:
@@ -95,7 +127,16 @@ def pht_run(params: dict):
                      label=params.get('label'), 
                      enable_traces=params.get('enable_traces'))
     print(pht)
-    pht.run()
+    self.update_state(state='PROGRESS', meta={'step': 'Reading Carto version'})
+    pht.readCartoVersion()
+    self.update_state(state='PROGRESS', meta={'step': 'Copying PHT tester files'})
+    pht.copy_phtester()
+    self.update_state(state='PROGRESS', meta={'step': 'Copying recordings'})
+    pht.copy_recordings()
+    self.update_state(state='PROGRESS', meta={'step': 'Updating trace configurations'})
+    pht.update_trace_config()
+    self.update_state(state='PROGRESS', meta={'step': 'Running PHT tester'})
+    pht.run_phtester()
 
     return True
 
