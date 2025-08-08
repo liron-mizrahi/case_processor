@@ -9,3 +9,4 @@ wheels/
 # Virtual environments
 .venv
 pht_runner/pht_runner.log
+pht_runner/config.ini

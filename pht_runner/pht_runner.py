@@ -124,8 +124,8 @@ class PHT_runner():
                                    self.pht_local_output_path)
 
         logging.info(f'Run : {cmdStr}')
-        # result = sp.run(cmdStr, stdout=sp.PIPE)
-        # return result.stdout.strip().decode("utf-8") 
+        result = sp.run(cmdStr, stdout=sp.PIPE)
+        return result.stdout.strip().decode("utf-8") 
     
     # Moves the generated trace results from the local output directory to the remote output directory.
     def copy_result(self): 

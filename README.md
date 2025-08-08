@@ -60,14 +60,23 @@ Processes data using the DLI module.
   ```
 
 ### 4. PHT Run Task
-Runs the PHT process.
-- **Task Name**: `tasks.pht_run`
-- **Example**:
-  ```python
-  params = {'path': '/cases/case1'}
-  result = app.send_task('tasks.pht_run', kwargs={'params': params})
-  print(result.get())  # Output: True
-  ```
+Runs the PHT process using the `PHT_runner` class.
+
+#### Parameters:
+- **dataDir** (str): The directory containing the data.
+- **label** (str, default="case1"): A label for the case.
+- **enable_traces** (list, default=[]): A list of traces to enable.
+
+#### Example:
+```python
+params = {
+    'dataDir': '/cases/case1',
+    'label': 'case01',
+    'enable_traces': ['TraceTTAlgUpdate2', 'TraceBCSystem']
+}
+result = app.send_task('tasks.pht_run', kwargs={'params': params})
+print(result.get())  # Output: True
+```
 
 ## Flower API Interface
 

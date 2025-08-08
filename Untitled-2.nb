@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       154,          7]
-NotebookDataLength[     48941,       1005]
-NotebookOptionsPosition[     46758,        955]
-NotebookOutlinePosition[     47207,        972]
-CellTagsIndexPosition[     47164,        969]
+NotebookDataLength[     30857,        718]
+NotebookOptionsPosition[     28697,        669]
+NotebookOutlinePosition[     29131,        685]
+CellTagsIndexPosition[     29088,        682]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -378,10 +378,11 @@ investigations\\\\274554\\\\Recordings\\\\2025.06.05_10.38.14.357\>\""}], ",",
    3.963560212474127*^9, 3.96356065360907*^9, {3.963567952461685*^9, 
    3.963567974876217*^9}, 3.963568008532423*^9, 3.96356888706522*^9, 
    3.9635691394489384`*^9},
- CellLabel->"In[36]:=",ExpressionUUID->"7d79c277-fa20-7e47-88a8-29c565ae4a5f"],
+ CellLabel->
+  "In[112]:=",ExpressionUUID->"7d79c277-fa20-7e47-88a8-29c565ae4a5f"],
 
 Cell[BoxData["\<\"{\\\"task-id\\\": \
-\\\"568535cb-0a6b-405d-87ca-8c5e814ec33e\\\", \\\"state\\\": \\\"PENDING\\\"}\
+\\\"c3c37427-bf26-4e7e-b773-934ab8e02812\\\", \\\"state\\\": \\\"PENDING\\\"}\
 \"\>"], "Output",
  CellChangeTimes->{{3.963551251802294*^9, 3.9635512648014164`*^9}, 
    3.9635513890617943`*^9, {3.9635514387921314`*^9, 3.9635514695296097`*^9}, {
@@ -396,8 +397,10 @@ Cell[BoxData["\<\"{\\\"task-id\\\": \
    3.963559682390421*^9, 3.9635600392719746`*^9, 3.9635601174089584`*^9, 
    3.963560180381901*^9, 3.963560215912985*^9, {3.963567975583969*^9, 
    3.9635679827348957`*^9}, 3.963568017160013*^9, 3.963568888868248*^9, 
-   3.963569142455347*^9},
- CellLabel->"Out[42]=",ExpressionUUID->"9447846e-f5ad-244f-80e5-1f8ceaaaf1b9"]
+   3.963569142455347*^9, 3.96359041055727*^9, 3.963590768638422*^9, 
+   3.963591049544636*^9},
+ CellLabel->
+  "Out[118]=",ExpressionUUID->"51cb6800-a97a-614a-a25d-a3de650a27ea"]
 }, Open  ]]
 }, Open  ]],
 
@@ -469,19 +472,23 @@ Cell[BoxData[
           RowBox[{"<|", 
            RowBox[{
             RowBox[{
-            "\"\<path\>\"", "->", " ", 
+            "\"\<dataDir\>\"", "->", " ", 
              "\"\<L:\\\\Carto_Recording_13\\\\Carto V8 Phase 3\\\\TPI field \
 investigations\\\\274554\\\\Recordings\\\\2025.06.05_10.38.14.357\>\""}], ",",
              "\[IndentingNewLine]", 
-            RowBox[{
-            "\"\<output_path\>\"", "->", "\"\<D:\\\\Liron\\\\temp\>\""}]}], 
-           "|>"}], "\[IndentingNewLine]", "\[IndentingNewLine]", "}"}]}], 
+            RowBox[{"\"\<label\>\"", "->", "\"\<case001\>\""}], ",", " ", 
+            "\[IndentingNewLine]", 
+            RowBox[{"\"\<enable_traces\>\"", "->", " ", 
+             RowBox[{"{", 
+              RowBox[{
+              "\"\<TraceTTAlgUpdate2\>\"", ",", "\"\<TraceBCSystem\>\""}], 
+              "}"}]}]}], "|>"}], "\[IndentingNewLine]", "}"}]}], 
         "\[IndentingNewLine]", "|>"}], ",", "\"\<JSON\>\""}], "]"}]}], ";"}], 
-   "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   "\n", "\[IndentingNewLine]", "\[IndentingNewLine]", 
    RowBox[{"(*", " ", 
     RowBox[{
     "Create", " ", "and", " ", "execute", " ", "the", " ", "HTTP", " ", 
-     "request"}], " ", "*)"}], "\n", 
+     "request"}], " ", "*)"}], "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"request", "=", 
      RowBox[{"HTTPRequest", "[", 
@@ -518,12 +525,13 @@ investigations\\\\274554\\\\Recordings\\\\2025.06.05_10.38.14.357\>\""}], ",",
    3.963560212474127*^9, 3.96356065360907*^9, 3.96356090053034*^9, {
    3.9635611029212837`*^9, 3.9635611269196625`*^9}, {3.963561511245119*^9, 
    3.9635615122305145`*^9}, 3.9635689601731052`*^9, {3.963568995048744*^9, 
-   3.963569014403475*^9}, {3.9635709910704823`*^9, 
-   3.96357099263282*^9}},ExpressionUUID->"ec3fbd72-d62f-7042-a6ca-\
+   3.963569014403475*^9}, {3.9635709910704823`*^9, 3.96357099263282*^9}, {
+   3.9635911831973705`*^9, 
+   3.963591241411558*^9}},ExpressionUUID->"ec3fbd72-d62f-7042-a6ca-\
 af20e3d76f2e"],
 
 Cell[BoxData["\<\"{\\\"task-id\\\": \
-\\\"75e735ed-ab5f-491e-a3d4-87870322e8f5\\\", \\\"state\\\": \\\"PENDING\\\"}\
+\\\"0c25520d-26dd-47f2-86c8-b8e944157362\\\", \\\"state\\\": \\\"PENDING\\\"}\
 \"\>"], "Output",
  CellChangeTimes->{{3.963551251802294*^9, 3.9635512648014164`*^9}, 
    3.9635513890617943`*^9, {3.9635514387921314`*^9, 3.9635514695296097`*^9}, {
@@ -538,8 +546,9 @@ Cell[BoxData["\<\"{\\\"task-id\\\": \
    3.963559682390421*^9, 3.9635600392719746`*^9, 3.9635601174089584`*^9, 
    3.963560180381901*^9, 3.963560215912985*^9, 3.9635609165865383`*^9, 
    3.9635610295227833`*^9, {3.963561368695593*^9, 3.9635613836068363`*^9}, 
-   3.9635689786234703`*^9, {3.9635690194463177`*^9, 3.9635690228873615`*^9}},
- CellLabel->"Out[35]=",ExpressionUUID->"8ad1aa30-4335-a149-aaeb-19762a2a5c54"]
+   3.9635689786234703`*^9, {3.9635690194463177`*^9, 3.9635690228873615`*^9}, 
+   3.9635710051472073`*^9},
+ CellLabel->"Out[90]=",ExpressionUUID->"7ec0ed75-312b-ea48-b408-54aab148aa29"]
 }, Open  ]]
 }, Open  ]],
 
@@ -634,96 +643,12 @@ Cell[BoxData[
    3.9635611029212837`*^9, 3.9635611269196625`*^9}, {3.963561511245119*^9, 
    3.9635615122305145`*^9}, 3.9635689601731052`*^9, {3.963568995048744*^9, 
    3.963569014403475*^9}, {3.963569658718992*^9, 3.9635697106957855`*^9}},
- CellLabel->"In[74]:=",ExpressionUUID->"6cf348cf-ef5e-c545-992c-157a6b982921"],
+ CellLabel->"In[91]:=",ExpressionUUID->"6cf348cf-ef5e-c545-992c-157a6b982921"],
 
-Cell[BoxData["\<\"{\\\"709e3910-22d5-4f34-9e7b-0466e1fbaa7b\\\": \
-{\\\"uuid\\\": \\\"709e3910-22d5-4f34-9e7b-0466e1fbaa7b\\\", \\\"name\\\": \\\
-\"tasks.genric_task\\\", \\\"state\\\": \\\"SUCCESS\\\", \\\"received\\\": \
-1754580741.1821973, \\\"sent\\\": null, \\\"started\\\": 1754580741.1845517, \
-\\\"rejected\\\": null, \\\"succeeded\\\": 1754580748.2911713, \
-\\\"failed\\\": null, \\\"retried\\\": null, \\\"revoked\\\": null, \
-\\\"args\\\": \\\"['echo', {'x': 5, 'y': 7}]\\\", \\\"kwargs\\\": \\\"{}\\\", \
-\\\"eta\\\": null, \\\"expires\\\": null, \\\"retries\\\": 0, \\\"result\\\": \
-\\\"{'x': 5, 'y': 7}\\\", \\\"exception\\\": null, \\\"timestamp\\\": \
-1754580748.2911713, \\\"runtime\\\": 7.1045830002985895, \\\"traceback\\\": \
-null, \\\"exchange\\\": null, \\\"routing_key\\\": null, \\\"clock\\\": 903, \
-\\\"client\\\": null, \\\"root\\\": \
-\\\"709e3910-22d5-4f34-9e7b-0466e1fbaa7b\\\", \\\"root_id\\\": \
-\\\"709e3910-22d5-4f34-9e7b-0466e1fbaa7b\\\", \\\"parent\\\": null, \
-\\\"parent_id\\\": null, \\\"children\\\": [], \\\"worker\\\": \
-\\\"celery@WDCORETECH02\\\"}, \\\"568535cb-0a6b-405d-87ca-8c5e814ec33e\\\": {\
-\\\"uuid\\\": \\\"568535cb-0a6b-405d-87ca-8c5e814ec33e\\\", \\\"name\\\": \
-\\\"tasks.dli_read\\\", \\\"state\\\": \\\"STARTED\\\", \\\"received\\\": \
-1754580371.701222, \\\"sent\\\": null, \\\"started\\\": 1754580371.7034564, \
-\\\"rejected\\\": null, \\\"succeeded\\\": null, \\\"failed\\\": null, \
-\\\"retried\\\": null, \\\"revoked\\\": null, \\\"args\\\": \\\"[{'version': \
-'8.1.1.944', 'path': 'L:\\\\\\\\Carto_Recording_13\\\\\\\\Carto V8 Phase \
-3\\\\\\\\TPI field \
-investigations\\\\\\\\274554\\\\\\\\Recordings\\\\\\\\2025.06.05_10.38.14.357'\
-, 'stream_label': 'tracettalgupdate2', 'output_path': \
-'D:\\\\\\\\Liron\\\\\\\\temp', 'max_workers': 4}]\\\", \\\"kwargs\\\": \\\"{}\
-\\\", \\\"eta\\\": null, \\\"expires\\\": null, \\\"retries\\\": 0, \
-\\\"result\\\": null, \\\"exception\\\": null, \\\"timestamp\\\": \
-1754580371.7034564, \\\"runtime\\\": null, \\\"traceback\\\": null, \
-\\\"exchange\\\": null, \\\"routing_key\\\": null, \\\"clock\\\": 428, \
-\\\"client\\\": null, \\\"root\\\": \
-\\\"568535cb-0a6b-405d-87ca-8c5e814ec33e\\\", \\\"root_id\\\": \
-\\\"568535cb-0a6b-405d-87ca-8c5e814ec33e\\\", \\\"parent\\\": null, \
-\\\"parent_id\\\": null, \\\"children\\\": [], \\\"worker\\\": \
-\\\"celery@WDCORETECH02\\\"}, \\\"75e735ed-ab5f-491e-a3d4-87870322e8f5\\\": {\
-\\\"uuid\\\": \\\"75e735ed-ab5f-491e-a3d4-87870322e8f5\\\", \\\"name\\\": \
-\\\"tasks.pht_run\\\", \\\"state\\\": \\\"SUCCESS\\\", \\\"received\\\": \
-1754580222.7699733, \\\"sent\\\": null, \\\"started\\\": 1754580222.7717805, \
-\\\"rejected\\\": null, \\\"succeeded\\\": 1754580222.7884426, \
-\\\"failed\\\": null, \\\"retried\\\": null, \\\"revoked\\\": null, \
-\\\"args\\\": \\\"[{'path': 'L:\\\\\\\\Carto_Recording_13\\\\\\\\Carto V8 \
-Phase 3\\\\\\\\TPI field investigations\\\\\\\\274554\\\\\\\\Recordings\\\\\\\
-\\2025.06.05_10.38.14.357', 'output_path': \
-'D:\\\\\\\\Liron\\\\\\\\temp'}]\\\", \\\"kwargs\\\": \\\"{}\\\", \\\"eta\\\": \
-null, \\\"expires\\\": null, \\\"retries\\\": 0, \\\"result\\\": \
-\\\"True\\\", \\\"exception\\\": null, \\\"timestamp\\\": 1754580222.7884426, \
-\\\"runtime\\\": 0.01467250008136034, \\\"traceback\\\": null, \\\"exchange\\\
-\": null, \\\"routing_key\\\": null, \\\"clock\\\": 269, \\\"client\\\": \
-null, \\\"root\\\": \\\"75e735ed-ab5f-491e-a3d4-87870322e8f5\\\", \\\"root_id\
-\\\": \\\"75e735ed-ab5f-491e-a3d4-87870322e8f5\\\", \\\"parent\\\": null, \
-\\\"parent_id\\\": null, \\\"children\\\": [], \\\"worker\\\": \
-\\\"celery@WDCORETECH02\\\"}, \\\"3eeb102c-2900-4f55-a139-5e056da65e3c\\\": {\
-\\\"uuid\\\": \\\"3eeb102c-2900-4f55-a139-5e056da65e3c\\\", \\\"name\\\": \
-\\\"tasks.dli_read\\\", \\\"state\\\": \\\"SUCCESS\\\", \\\"received\\\": \
-1754580088.739314, \\\"sent\\\": null, \\\"started\\\": 1754580088.7409916, \
-\\\"rejected\\\": null, \\\"succeeded\\\": 1754580097.7486675, \
-\\\"failed\\\": null, \\\"retried\\\": null, \\\"revoked\\\": null, \
-\\\"args\\\": \\\"[{'version': '8.1.1.944', 'path': \
-'L:\\\\\\\\Carto_Recording_13\\\\\\\\Carto V8 Phase 3\\\\\\\\TPI field \
-investigations\\\\\\\\274554\\\\\\\\Recordings\\\\\\\\2025.06.05_10.38.14.357'\
-, 'stream_label': 'tracettalgupdate2', 'output_path': \
-'D:\\\\\\\\Liron\\\\\\\\temp', 'tsRange': [1000000, 1010000], 'max_workers': \
-4}]\\\", \\\"kwargs\\\": \\\"{}\\\", \\\"eta\\\": null, \\\"expires\\\": \
-null, \\\"retries\\\": 0, \\\"result\\\": \\\"True\\\", \\\"exception\\\": \
-null, \\\"timestamp\\\": 1754580097.7486675, \\\"runtime\\\": \
-9.005480099935085, \\\"traceback\\\": null, \\\"exchange\\\": null, \
-\\\"routing_key\\\": null, \\\"clock\\\": 115, \\\"client\\\": null, \\\"root\
-\\\": \\\"3eeb102c-2900-4f55-a139-5e056da65e3c\\\", \\\"root_id\\\": \
-\\\"3eeb102c-2900-4f55-a139-5e056da65e3c\\\", \\\"parent\\\": null, \
-\\\"parent_id\\\": null, \\\"children\\\": [], \\\"worker\\\": \
-\\\"celery@WDCORETECH02\\\"}, \\\"d63edac1-baa0-4f09-b4c5-6dcc943b717d\\\": {\
-\\\"uuid\\\": \\\"d63edac1-baa0-4f09-b4c5-6dcc943b717d\\\", \\\"name\\\": \
-\\\"tasks.genric_task\\\", \\\"state\\\": \\\"SUCCESS\\\", \\\"received\\\": \
-1754580054.0014358, \\\"sent\\\": null, \\\"started\\\": 1754580054.0037904, \
-\\\"rejected\\\": null, \\\"succeeded\\\": 1754580061.131118, \\\"failed\\\": \
-null, \\\"retried\\\": null, \\\"revoked\\\": null, \\\"args\\\": \
-\\\"['echo', {'x': 5, 'y': 7}]\\\", \\\"kwargs\\\": \\\"{}\\\", \\\"eta\\\": \
-null, \\\"expires\\\": null, \\\"retries\\\": 0, \\\"result\\\": \\\"{'x': 5, \
-'y': 7}\\\", \\\"exception\\\": null, \\\"timestamp\\\": 1754580061.131118, \
-\\\"runtime\\\": 7.1247575003653765, \\\"traceback\\\": null, \
-\\\"exchange\\\": null, \\\"routing_key\\\": null, \\\"clock\\\": 69, \
-\\\"client\\\": null, \\\"root\\\": \
-\\\"d63edac1-baa0-4f09-b4c5-6dcc943b717d\\\", \\\"root_id\\\": \
-\\\"d63edac1-baa0-4f09-b4c5-6dcc943b717d\\\", \\\"parent\\\": null, \
-\\\"parent_id\\\": null, \\\"children\\\": [], \\\"worker\\\": \
-\\\"celery@WDCORETECH02\\\"}}\"\>"], "Output",
- CellChangeTimes->{{3.9635696809821625`*^9, 3.963569711431175*^9}},
- CellLabel->"Out[79]=",ExpressionUUID->"567f1697-d472-4648-a02e-646be1cb17a3"]
+Cell[BoxData["\<\"{}\"\>"], "Output",
+ CellChangeTimes->{{3.9635696809821625`*^9, 3.963569711431175*^9}, 
+   3.963590389450754*^9},
+ CellLabel->"Out[96]=",ExpressionUUID->"8e4821b5-d503-fb48-98f4-7ff5524acbf4"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -732,230 +657,18 @@ Cell[BoxData[
  RowBox[{"ImportString", "[", 
   RowBox[{"response", ",", " ", "\"\<RawJSON\>\""}], "]"}]], "Input",
  CellChangeTimes->{{3.963569743834463*^9, 3.963569801082855*^9}},
- CellLabel->"In[83]:=",ExpressionUUID->"501ec20a-f75c-b44c-bb26-9ddc33f5395a"],
+ CellLabel->"In[97]:=",ExpressionUUID->"501ec20a-f75c-b44c-bb26-9ddc33f5395a"],
 
 Cell[BoxData[
- RowBox[{"\[LeftAssociation]", 
-  RowBox[{
-   RowBox[{"\<\"709e3910-22d5-4f34-9e7b-0466e1fbaa7b\"\>", "\[Rule]", 
-    RowBox[{"\[LeftAssociation]", 
-     RowBox[{
-      RowBox[{"\<\"uuid\"\>", 
-       "\[Rule]", "\<\"709e3910-22d5-4f34-9e7b-0466e1fbaa7b\"\>"}], ",", 
-      RowBox[{"\<\"name\"\>", "\[Rule]", "\<\"tasks.genric_task\"\>"}], ",", 
-      RowBox[{"\<\"state\"\>", "\[Rule]", "\<\"SUCCESS\"\>"}], ",", 
-      RowBox[{"\<\"received\"\>", "\[Rule]", "1.7545807411821973`*^9"}], ",", 
-      RowBox[{"\<\"sent\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"started\"\>", "\[Rule]", "1.7545807411845517`*^9"}], ",", 
-      RowBox[{"\<\"rejected\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"succeeded\"\>", "\[Rule]", "1.7545807482911713`*^9"}], ",", 
-      RowBox[{"\<\"failed\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"retried\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"revoked\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"args\"\>", 
-       "\[Rule]", "\<\"['echo', {'x': 5, 'y': 7}]\"\>"}], ",", 
-      RowBox[{"\<\"kwargs\"\>", "\[Rule]", "\<\"{}\"\>"}], ",", 
-      RowBox[{"\<\"eta\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"expires\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"retries\"\>", "\[Rule]", "0"}], ",", 
-      RowBox[{"\<\"result\"\>", "\[Rule]", "\<\"{'x': 5, 'y': 7}\"\>"}], ",", 
-      RowBox[{"\<\"exception\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"timestamp\"\>", "\[Rule]", "1.7545807482911713`*^9"}], ",", 
-      RowBox[{"\<\"runtime\"\>", "\[Rule]", "7.1045830002985895`"}], ",", 
-      RowBox[{"\<\"traceback\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"exchange\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"routing_key\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"clock\"\>", "\[Rule]", "903"}], ",", 
-      RowBox[{"\<\"client\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"root\"\>", 
-       "\[Rule]", "\<\"709e3910-22d5-4f34-9e7b-0466e1fbaa7b\"\>"}], ",", 
-      RowBox[{"\<\"root_id\"\>", 
-       "\[Rule]", "\<\"709e3910-22d5-4f34-9e7b-0466e1fbaa7b\"\>"}], ",", 
-      RowBox[{"\<\"parent\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"parent_id\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"children\"\>", "\[Rule]", 
-       RowBox[{"{", "}"}]}], ",", 
-      RowBox[{"\<\"worker\"\>", "\[Rule]", "\<\"celery@WDCORETECH02\"\>"}]}], 
-     "\[RightAssociation]"}]}], ",", 
-   RowBox[{"\<\"568535cb-0a6b-405d-87ca-8c5e814ec33e\"\>", "\[Rule]", 
-    RowBox[{"\[LeftAssociation]", 
-     RowBox[{
-      RowBox[{"\<\"uuid\"\>", 
-       "\[Rule]", "\<\"568535cb-0a6b-405d-87ca-8c5e814ec33e\"\>"}], ",", 
-      RowBox[{"\<\"name\"\>", "\[Rule]", "\<\"tasks.dli_read\"\>"}], ",", 
-      RowBox[{"\<\"state\"\>", "\[Rule]", "\<\"STARTED\"\>"}], ",", 
-      RowBox[{"\<\"received\"\>", "\[Rule]", "1.754580371701222`*^9"}], ",", 
-      RowBox[{"\<\"sent\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"started\"\>", "\[Rule]", "1.7545803717034564`*^9"}], ",", 
-      RowBox[{"\<\"rejected\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"succeeded\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"failed\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"retried\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"revoked\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"args\"\>", 
-       "\[Rule]", "\<\"[{'version': '8.1.1.944', 'path': \
-'L:\\\\Carto_Recording_13\\\\Carto V8 Phase 3\\\\TPI field \
-investigations\\\\274554\\\\Recordings\\\\2025.06.05_10.38.14.357', \
-'stream_label': 'tracettalgupdate2', 'output_path': 'D:\\\\Liron\\\\temp', \
-'max_workers': 4}]\"\>"}], ",", 
-      RowBox[{"\<\"kwargs\"\>", "\[Rule]", "\<\"{}\"\>"}], ",", 
-      RowBox[{"\<\"eta\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"expires\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"retries\"\>", "\[Rule]", "0"}], ",", 
-      RowBox[{"\<\"result\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"exception\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"timestamp\"\>", "\[Rule]", "1.7545803717034564`*^9"}], ",", 
-      RowBox[{"\<\"runtime\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"traceback\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"exchange\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"routing_key\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"clock\"\>", "\[Rule]", "428"}], ",", 
-      RowBox[{"\<\"client\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"root\"\>", 
-       "\[Rule]", "\<\"568535cb-0a6b-405d-87ca-8c5e814ec33e\"\>"}], ",", 
-      RowBox[{"\<\"root_id\"\>", 
-       "\[Rule]", "\<\"568535cb-0a6b-405d-87ca-8c5e814ec33e\"\>"}], ",", 
-      RowBox[{"\<\"parent\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"parent_id\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"children\"\>", "\[Rule]", 
-       RowBox[{"{", "}"}]}], ",", 
-      RowBox[{"\<\"worker\"\>", "\[Rule]", "\<\"celery@WDCORETECH02\"\>"}]}], 
-     "\[RightAssociation]"}]}], ",", 
-   RowBox[{"\<\"75e735ed-ab5f-491e-a3d4-87870322e8f5\"\>", "\[Rule]", 
-    RowBox[{"\[LeftAssociation]", 
-     RowBox[{
-      RowBox[{"\<\"uuid\"\>", 
-       "\[Rule]", "\<\"75e735ed-ab5f-491e-a3d4-87870322e8f5\"\>"}], ",", 
-      RowBox[{"\<\"name\"\>", "\[Rule]", "\<\"tasks.pht_run\"\>"}], ",", 
-      RowBox[{"\<\"state\"\>", "\[Rule]", "\<\"SUCCESS\"\>"}], ",", 
-      RowBox[{"\<\"received\"\>", "\[Rule]", "1.7545802227699733`*^9"}], ",", 
-      RowBox[{"\<\"sent\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"started\"\>", "\[Rule]", "1.7545802227717805`*^9"}], ",", 
-      RowBox[{"\<\"rejected\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"succeeded\"\>", "\[Rule]", "1.7545802227884426`*^9"}], ",", 
-      RowBox[{"\<\"failed\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"retried\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"revoked\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"args\"\>", 
-       "\[Rule]", "\<\"[{'path': 'L:\\\\Carto_Recording_13\\\\Carto V8 Phase \
-3\\\\TPI field \
-investigations\\\\274554\\\\Recordings\\\\2025.06.05_10.38.14.357', \
-'output_path': 'D:\\\\Liron\\\\temp'}]\"\>"}], ",", 
-      RowBox[{"\<\"kwargs\"\>", "\[Rule]", "\<\"{}\"\>"}], ",", 
-      RowBox[{"\<\"eta\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"expires\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"retries\"\>", "\[Rule]", "0"}], ",", 
-      RowBox[{"\<\"result\"\>", "\[Rule]", "\<\"True\"\>"}], ",", 
-      RowBox[{"\<\"exception\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"timestamp\"\>", "\[Rule]", "1.7545802227884426`*^9"}], ",", 
-      RowBox[{"\<\"runtime\"\>", "\[Rule]", "0.01467250008136034`"}], ",", 
-      RowBox[{"\<\"traceback\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"exchange\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"routing_key\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"clock\"\>", "\[Rule]", "269"}], ",", 
-      RowBox[{"\<\"client\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"root\"\>", 
-       "\[Rule]", "\<\"75e735ed-ab5f-491e-a3d4-87870322e8f5\"\>"}], ",", 
-      RowBox[{"\<\"root_id\"\>", 
-       "\[Rule]", "\<\"75e735ed-ab5f-491e-a3d4-87870322e8f5\"\>"}], ",", 
-      RowBox[{"\<\"parent\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"parent_id\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"children\"\>", "\[Rule]", 
-       RowBox[{"{", "}"}]}], ",", 
-      RowBox[{"\<\"worker\"\>", "\[Rule]", "\<\"celery@WDCORETECH02\"\>"}]}], 
-     "\[RightAssociation]"}]}], ",", 
-   RowBox[{"\<\"3eeb102c-2900-4f55-a139-5e056da65e3c\"\>", "\[Rule]", 
-    RowBox[{"\[LeftAssociation]", 
-     RowBox[{
-      RowBox[{"\<\"uuid\"\>", 
-       "\[Rule]", "\<\"3eeb102c-2900-4f55-a139-5e056da65e3c\"\>"}], ",", 
-      RowBox[{"\<\"name\"\>", "\[Rule]", "\<\"tasks.dli_read\"\>"}], ",", 
-      RowBox[{"\<\"state\"\>", "\[Rule]", "\<\"SUCCESS\"\>"}], ",", 
-      RowBox[{"\<\"received\"\>", "\[Rule]", "1.754580088739314`*^9"}], ",", 
-      RowBox[{"\<\"sent\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"started\"\>", "\[Rule]", "1.7545800887409916`*^9"}], ",", 
-      RowBox[{"\<\"rejected\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"succeeded\"\>", "\[Rule]", "1.7545800977486675`*^9"}], ",", 
-      RowBox[{"\<\"failed\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"retried\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"revoked\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"args\"\>", 
-       "\[Rule]", "\<\"[{'version': '8.1.1.944', 'path': \
-'L:\\\\Carto_Recording_13\\\\Carto V8 Phase 3\\\\TPI field \
-investigations\\\\274554\\\\Recordings\\\\2025.06.05_10.38.14.357', \
-'stream_label': 'tracettalgupdate2', 'output_path': 'D:\\\\Liron\\\\temp', \
-'tsRange': [1000000, 1010000], 'max_workers': 4}]\"\>"}], ",", 
-      RowBox[{"\<\"kwargs\"\>", "\[Rule]", "\<\"{}\"\>"}], ",", 
-      RowBox[{"\<\"eta\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"expires\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"retries\"\>", "\[Rule]", "0"}], ",", 
-      RowBox[{"\<\"result\"\>", "\[Rule]", "\<\"True\"\>"}], ",", 
-      RowBox[{"\<\"exception\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"timestamp\"\>", "\[Rule]", "1.7545800977486675`*^9"}], ",", 
-      RowBox[{"\<\"runtime\"\>", "\[Rule]", "9.005480099935085`"}], ",", 
-      RowBox[{"\<\"traceback\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"exchange\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"routing_key\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"clock\"\>", "\[Rule]", "115"}], ",", 
-      RowBox[{"\<\"client\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"root\"\>", 
-       "\[Rule]", "\<\"3eeb102c-2900-4f55-a139-5e056da65e3c\"\>"}], ",", 
-      RowBox[{"\<\"root_id\"\>", 
-       "\[Rule]", "\<\"3eeb102c-2900-4f55-a139-5e056da65e3c\"\>"}], ",", 
-      RowBox[{"\<\"parent\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"parent_id\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"children\"\>", "\[Rule]", 
-       RowBox[{"{", "}"}]}], ",", 
-      RowBox[{"\<\"worker\"\>", "\[Rule]", "\<\"celery@WDCORETECH02\"\>"}]}], 
-     "\[RightAssociation]"}]}], ",", 
-   RowBox[{"\<\"d63edac1-baa0-4f09-b4c5-6dcc943b717d\"\>", "\[Rule]", 
-    RowBox[{"\[LeftAssociation]", 
-     RowBox[{
-      RowBox[{"\<\"uuid\"\>", 
-       "\[Rule]", "\<\"d63edac1-baa0-4f09-b4c5-6dcc943b717d\"\>"}], ",", 
-      RowBox[{"\<\"name\"\>", "\[Rule]", "\<\"tasks.genric_task\"\>"}], ",", 
-      RowBox[{"\<\"state\"\>", "\[Rule]", "\<\"SUCCESS\"\>"}], ",", 
-      RowBox[{"\<\"received\"\>", "\[Rule]", "1.7545800540014358`*^9"}], ",", 
-      RowBox[{"\<\"sent\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"started\"\>", "\[Rule]", "1.7545800540037904`*^9"}], ",", 
-      RowBox[{"\<\"rejected\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"succeeded\"\>", "\[Rule]", "1.754580061131118`*^9"}], ",", 
-      RowBox[{"\<\"failed\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"retried\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"revoked\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"args\"\>", 
-       "\[Rule]", "\<\"['echo', {'x': 5, 'y': 7}]\"\>"}], ",", 
-      RowBox[{"\<\"kwargs\"\>", "\[Rule]", "\<\"{}\"\>"}], ",", 
-      RowBox[{"\<\"eta\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"expires\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"retries\"\>", "\[Rule]", "0"}], ",", 
-      RowBox[{"\<\"result\"\>", "\[Rule]", "\<\"{'x': 5, 'y': 7}\"\>"}], ",", 
-      RowBox[{"\<\"exception\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"timestamp\"\>", "\[Rule]", "1.754580061131118`*^9"}], ",", 
-      RowBox[{"\<\"runtime\"\>", "\[Rule]", "7.1247575003653765`"}], ",", 
-      RowBox[{"\<\"traceback\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"exchange\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"routing_key\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"clock\"\>", "\[Rule]", "69"}], ",", 
-      RowBox[{"\<\"client\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"root\"\>", 
-       "\[Rule]", "\<\"d63edac1-baa0-4f09-b4c5-6dcc943b717d\"\>"}], ",", 
-      RowBox[{"\<\"root_id\"\>", 
-       "\[Rule]", "\<\"d63edac1-baa0-4f09-b4c5-6dcc943b717d\"\>"}], ",", 
-      RowBox[{"\<\"parent\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"parent_id\"\>", "\[Rule]", "Null"}], ",", 
-      RowBox[{"\<\"children\"\>", "\[Rule]", 
-       RowBox[{"{", "}"}]}], ",", 
-      RowBox[{"\<\"worker\"\>", "\[Rule]", "\<\"celery@WDCORETECH02\"\>"}]}], 
-     "\[RightAssociation]"}]}]}], "\[RightAssociation]"}]], "Output",
- CellChangeTimes->{{3.9635697726682987`*^9, 3.963569801668833*^9}},
- CellLabel->"Out[83]=",ExpressionUUID->"32d2020d-2f91-4a4e-b5cb-1d09e55e3088"]
+ RowBox[{"\[LeftAssociation]", "\[RightAssociation]"}]], "Output",
+ CellChangeTimes->{{3.9635697726682987`*^9, 3.963569801668833*^9}, 
+   3.9635903956898594`*^9},
+ CellLabel->"Out[97]=",ExpressionUUID->"2578b02c-a760-9942-8f44-d4c957f2867a"]
 }, Open  ]]
 }, Open  ]]
 },
 WindowSize->{931.1999999999999, 569.4},
-WindowMargins->{{Automatic, 70.20000000000005}, {
-  22.800000000000068`, Automatic}},
+WindowMargins->{{Automatic, -4.7999999999999545`}, {Automatic, 22.2}},
 FrontEndVersion->"14.1 for Microsoft Windows (64-bit) (July 16, 2024)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"53b0eec1-576b-894a-aefc-2f4dbf215123"
@@ -979,32 +692,32 @@ Cell[CellGroupData[{
 Cell[4715, 125, 134, 3, 66, "Section",ExpressionUUID->"70bbea7b-a942-6946-89ff-7a90c645d8d1"],
 Cell[CellGroupData[{
 Cell[4874, 132, 4277, 99, 560, "Input",ExpressionUUID->"d9d7cc90-9c29-7143-8c94-d87f5339699e"],
-Cell[9154, 233, 802, 11, 77, "Output",ExpressionUUID->"5896d67b-8243-c644-bd1e-9ddc4449faff"]
+Cell[9154, 233, 802, 11, 32, "Output",ExpressionUUID->"5896d67b-8243-c644-bd1e-9ddc4449faff"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
 Cell[10005, 250, 181, 4, 66, "Section",ExpressionUUID->"9d6ed6f8-e437-4744-b9c6-9bc4fdb4dbf4"],
 Cell[CellGroupData[{
-Cell[10211, 258, 5513, 122, 789, "Input",ExpressionUUID->"7d79c277-fa20-7e47-88a8-29c565ae4a5f"],
-Cell[15727, 382, 1194, 17, 32, "Output",ExpressionUUID->"9447846e-f5ad-244f-80e5-1f8ceaaaf1b9"]
+Cell[10211, 258, 5517, 123, 789, "Input",ExpressionUUID->"7d79c277-fa20-7e47-88a8-29c565ae4a5f"],
+Cell[15731, 383, 1267, 19, 32, "Output",ExpressionUUID->"51cb6800-a97a-614a-a25d-a3de650a27ea"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[16970, 405, 198, 3, 66, "Section",ExpressionUUID->"113cbd25-df87-434f-ac3d-89ac3db2e7de"],
+Cell[17047, 408, 198, 3, 66, "Section",ExpressionUUID->"113cbd25-df87-434f-ac3d-89ac3db2e7de"],
 Cell[CellGroupData[{
-Cell[17193, 412, 4975, 110, 713, "Input",ExpressionUUID->"ec3fbd72-d62f-7042-a6ca-af20e3d76f2e"],
-Cell[22171, 524, 1250, 17, 32, "Output",ExpressionUUID->"8ad1aa30-4335-a149-aaeb-19762a2a5c54"]
+Cell[17270, 415, 5217, 115, 713, "Input",ExpressionUUID->"ec3fbd72-d62f-7042-a6ca-af20e3d76f2e"],
+Cell[22490, 532, 1278, 18, 32, "Output",ExpressionUUID->"7ec0ed75-312b-ea48-b408-54aab148aa29"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[23470, 547, 160, 3, 66, "Section",ExpressionUUID->"d7a885c8-09a1-3944-90a1-ee6268eac1df"],
+Cell[23817, 556, 160, 3, 66, "Section",ExpressionUUID->"d7a885c8-09a1-3944-90a1-ee6268eac1df"],
 Cell[CellGroupData[{
-Cell[23655, 554, 3900, 82, 484, "Input",ExpressionUUID->"6cf348cf-ef5e-c545-992c-157a6b982921"],
-Cell[27558, 638, 6222, 87, 907, "Output",ExpressionUUID->"567f1697-d472-4648-a02e-646be1cb17a3"]
+Cell[24002, 563, 3900, 82, 484, "Input",ExpressionUUID->"6cf348cf-ef5e-c545-992c-157a6b982921"],
+Cell[27905, 647, 210, 3, 32, "Output",ExpressionUUID->"8e4821b5-d503-fb48-98f4-7ff5524acbf4"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[33817, 730, 259, 4, 28, "Input",ExpressionUUID->"501ec20a-f75c-b44c-bb26-9ddc33f5395a"],
-Cell[34079, 736, 12651, 215, 910, "Output",ExpressionUUID->"32d2020d-2f91-4a4e-b5cb-1d09e55e3088"]
+Cell[28152, 655, 259, 4, 28, "Input",ExpressionUUID->"501ec20a-f75c-b44c-bb26-9ddc33f5395a"],
+Cell[28414, 661, 255, 4, 51, "Output",ExpressionUUID->"2578b02c-a760-9942-8f44-d4c957f2867a"]
 }, Open  ]]
 }, Open  ]]
 }
