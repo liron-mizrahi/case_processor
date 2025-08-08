@@ -14,13 +14,14 @@ class PHT_runner():
             
 
     # Initializes the PHT_runner class with the required parameters and sets up logging.
-    def __init__(self, dataDir:str, label:str = "case1",enable_traces=[]) -> None:
+    def __init__(self, dataDir:str, label:str = "case1",enable_traces=[], exclude_dirs=[]) -> None:
         self.module_dir = Path(__file__).parent
         self.config = configparser.ConfigParser()
         self.config.read(self.module_dir.joinpath('config.ini'))
         self.dataDir = dataDir
         self.label = label
         self.enable_traces = enable_traces
+        self.exclude_dirs = exclude_dirs
 
         """Set up logging to an external file in the same directory."""
         log_file_path = os.path.join(self.module_dir, 'pht_runner.log')
@@ -84,7 +85,7 @@ class PHT_runner():
 
         for f in Path(self.caseDir).iterdir(): 
             if f.is_dir(): 
-                if f.parts[-1] not in ['CartoData' , 'ScreenRecording', 'Traces']: 
+                if f.parts[-1] not in self.exclude_dirs: 
                     print(f)
                     shutil.copytree(f, Path(self.incoming_case_path).joinpath(f.name), ignore=shutil.ignore_patterns('*$RECYCLE.BIN*'))
             else: 

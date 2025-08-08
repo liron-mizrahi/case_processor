@@ -125,7 +125,8 @@ def pht_run(self, params: dict):
 
     pht = PHT_runner(dataDir= params.get('dataDir'), 
                      label=params.get('label'), 
-                     enable_traces=params.get('enable_traces'))
+                     enable_traces=params.get('enable_traces'), 
+                     exclude_dirs=params.get('enable_traces', None) )
     print(pht)
     self.update_state(state='PROGRESS', meta={'step': 'Reading Carto version'})
     pht.readCartoVersion()
