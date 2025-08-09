@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       154,          7]
-NotebookDataLength[     44569,        992]
-NotebookOptionsPosition[     42310,        942]
-NotebookOutlinePosition[     42744,        958]
-CellTagsIndexPosition[     42701,        955]
+NotebookDataLength[     48351,        997]
+NotebookOptionsPosition[     46069,        946]
+NotebookOutlinePosition[     46522,        963]
+CellTagsIndexPosition[     46479,        960]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -325,8 +325,9 @@ investigations\\\\274554\\\\Recordings\\\\2025.06.05_10.38.14.357\>\""}], ",",
             "\"\<stream_label\>\"", "->", " ", "\"\<tracettalgupdate2\>\""}], 
             ",", "\[IndentingNewLine]", 
             RowBox[{
-            "\"\<output_path\>\"", "->", "\"\<D:\\\\Liron\\\\temp\>\""}], ",",
-             "\[IndentingNewLine]", 
+            "\"\<output_path\>\"", "->", 
+             "\"\<\\\\\\\\wdcoretech02\\\\Liron\\\\temp\>\""}], ",", 
+            "\[IndentingNewLine]", 
             RowBox[{"(*", 
              RowBox[{
               RowBox[{"\"\<tsRange\>\"", "->", " ", 
@@ -337,11 +338,11 @@ investigations\\\\274554\\\\Recordings\\\\2025.06.05_10.38.14.357\>\""}], ",",
            "\[IndentingNewLine]", "|>"}], "\[IndentingNewLine]", 
           "\[IndentingNewLine]", "}"}]}], "\[IndentingNewLine]", "|>"}], ",", 
        "\"\<JSON\>\""}], "]"}]}], ";"}], "\[IndentingNewLine]", 
-   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", "\n", 
    RowBox[{"(*", " ", 
     RowBox[{
     "Create", " ", "and", " ", "execute", " ", "the", " ", "HTTP", " ", 
-     "request"}], " ", "*)"}], "\n", 
+     "request"}], " ", "*)"}], "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"request", "=", 
      RowBox[{"HTTPRequest", "[", 
@@ -377,12 +378,12 @@ investigations\\\\274554\\\\Recordings\\\\2025.06.05_10.38.14.357\>\""}], ",",
    3.9635562050306473`*^9, {3.963560164318266*^9, 3.96356017510688*^9}, 
    3.963560212474127*^9, 3.96356065360907*^9, {3.963567952461685*^9, 
    3.963567974876217*^9}, 3.963568008532423*^9, 3.96356888706522*^9, 
-   3.9635691394489384`*^9},
+   3.9635691394489384`*^9, {3.9637210101039753`*^9, 3.963721014704712*^9}},
  CellLabel->
-  "In[112]:=",ExpressionUUID->"7d79c277-fa20-7e47-88a8-29c565ae4a5f"],
+  "In[104]:=",ExpressionUUID->"7d79c277-fa20-7e47-88a8-29c565ae4a5f"],
 
 Cell[BoxData["\<\"{\\\"task-id\\\": \
-\\\"c3c37427-bf26-4e7e-b773-934ab8e02812\\\", \\\"state\\\": \\\"PENDING\\\"}\
+\\\"1e156ba5-fcfe-4d40-b16d-791cfb0ad57e\\\", \\\"state\\\": \\\"PENDING\\\"}\
 \"\>"], "Output",
  CellChangeTimes->{{3.963551251802294*^9, 3.9635512648014164`*^9}, 
    3.9635513890617943`*^9, {3.9635514387921314`*^9, 3.9635514695296097`*^9}, {
@@ -398,9 +399,11 @@ Cell[BoxData["\<\"{\\\"task-id\\\": \
    3.963560180381901*^9, 3.963560215912985*^9, {3.963567975583969*^9, 
    3.9635679827348957`*^9}, 3.963568017160013*^9, 3.963568888868248*^9, 
    3.963569142455347*^9, 3.96359041055727*^9, 3.963590768638422*^9, 
-   3.963591049544636*^9},
+   3.963591049544636*^9, 3.96363337286178*^9, 3.9636334370004063`*^9, 
+   3.9636335096793118`*^9, 3.963637822116068*^9, 3.963638006248844*^9, {
+   3.963652527017523*^9, 3.963652544456028*^9}, 3.9637210179261513`*^9},
  CellLabel->
-  "Out[118]=",ExpressionUUID->"51cb6800-a97a-614a-a25d-a3de650a27ea"]
+  "Out[110]=",ExpressionUUID->"e30251f8-6dbd-3448-9371-f99f602cbdee"]
 }, Open  ]]
 }, Open  ]],
 
@@ -476,7 +479,7 @@ Cell[BoxData[
              "\"\<L:\\\\Carto_Recording_13\\\\Carto V8 Phase 3\\\\TPI field \
 investigations\\\\274554\\\\Recordings\\\\2025.06.05_10.38.14.357\>\""}], ",",
              "\[IndentingNewLine]", 
-            RowBox[{"\"\<label\>\"", "->", "\"\<case001\>\""}], ",", " ", 
+            RowBox[{"\"\<label\>\"", "->", "\"\<case003\>\""}], ",", " ", 
             "\[IndentingNewLine]", 
             RowBox[{"\"\<enable_traces\>\"", "->", " ", 
              RowBox[{"{", 
@@ -484,11 +487,11 @@ investigations\\\\274554\\\\Recordings\\\\2025.06.05_10.38.14.357\>\""}], ",",
               "\"\<TraceTTAlgUpdate2\>\"", ",", "\"\<TraceBCSystem\>\""}], 
               "}"}]}]}], "|>"}], "\[IndentingNewLine]", "}"}]}], 
         "\[IndentingNewLine]", "|>"}], ",", "\"\<JSON\>\""}], "]"}]}], ";"}], 
-   "\[IndentingNewLine]", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   "\[IndentingNewLine]", "\n", "\[IndentingNewLine]", 
    RowBox[{"(*", " ", 
     RowBox[{
     "Create", " ", "and", " ", "execute", " ", "the", " ", "HTTP", " ", 
-     "request"}], " ", "*)"}], "\n", 
+     "request"}], " ", "*)"}], "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"request", "=", 
      RowBox[{"HTTPRequest", "[", 
@@ -527,285 +530,14 @@ investigations\\\\274554\\\\Recordings\\\\2025.06.05_10.38.14.357\>\""}], ",",
    3.9635615122305145`*^9}, 3.9635689601731052`*^9, {3.963568995048744*^9, 
    3.963569014403475*^9}, {3.9635709910704823`*^9, 3.96357099263282*^9}, {
    3.9635911831973705`*^9, 3.963591241411558*^9}, {3.963632280913431*^9, 
-   3.963632283366289*^9}},ExpressionUUID->"ec3fbd72-d62f-7042-a6ca-\
+   3.963632283366289*^9}, 3.9636389269793015`*^9, 3.9636526491118298`*^9, {
+   3.963723206227228*^9, 
+   3.9637232099818687`*^9}},ExpressionUUID->"ec3fbd72-d62f-7042-a6ca-\
 af20e3d76f2e"],
 
-Cell[BoxData[
- TemplateBox[{
-  "URLRead", "invhttp", 
-   "\"\\!\\(\\*RowBox[{\\\"\\\\\\\"Failed to connect to localhost port 5555 \
-after 2244 ms: Couldn't connect to server\\\\\\\"\\\"}]\\).\"", 2, 6, 1, 
-   30554853781826509855, "Local"},
-  "MessageTemplate"]], "Message", "MSG",
- CellChangeTimes->{3.963632271169113*^9},
- CellLabel->
-  "During evaluation of \
-In[1]:=",ExpressionUUID->"9890af17-9ad9-6d4d-ae03-3833ad5aaec4"],
-
-Cell[BoxData[
- InterpretationBox[
-  RowBox[{
-   TagBox["Failure",
-    "SummaryHead"], "[", 
-   DynamicModuleBox[{Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
-    TemplateBox[{
-      PaneSelectorBox[{False -> GridBox[{{
-            PaneBox[
-             ButtonBox[
-              DynamicBox[
-               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxOpener"]], 
-              ButtonFunction :> (Typeset`open$$ = True), Appearance -> None, 
-              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
-              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
-             Dynamic[{
-               Automatic, 
-                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
-                 Magnification])}]], 
-            FrameBox[
-             StyleBox["\"\[WarningSign]\"", 
-              Directive["Message", 35], StripOnInput -> False], 
-             ContentPadding -> False, FrameStyle -> None, 
-             FrameMargins -> {{0, 0}, {0, 0}}, StripOnInput -> False], 
-            GridBox[{{
-               TagBox[
-                GridBox[{{
-                   TagBox["\"Message: \"", "SummaryItemAnnotation"], 
-                   "\[InvisibleSpace]", 
-                   TagBox[
-                   "\"Could not connect to \
-\\!\\(\\*TagBox[\\\"\\\\\\\"http://localhost:5555/api/task/send-task/tasks.\
-pht_run\\\\\\\"\\\", Function[Short[Slot[1], 5]]]\\).\"", "SummaryItem"]}}, 
-                 GridBoxItemSize -> {"Columns" -> {6.5, All, Automatic}}, 
-                 GridBoxAlignment -> {"Columns" -> {{Left}}}, 
-                 GridBoxSpacings -> {"Columns" -> {{0}}}], "SummaryItem"]}, {
-               TagBox[
-                GridBox[{{
-                   TagBox["\"Tag: \"", "SummaryItemAnnotation"], 
-                   "\[InvisibleSpace]", 
-                   TagBox["\"ConnectionFailure\"", "SummaryItem"]}}, 
-                 GridBoxItemSize -> {"Columns" -> {6.5, All, Automatic}}, 
-                 GridBoxAlignment -> {"Columns" -> {{Left}}}, 
-                 GridBoxSpacings -> {"Columns" -> {{0}}}], "SummaryItem"]}}, 
-             GridBoxAlignment -> {
-              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
-             False, GridBoxItemSize -> {
-              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
-              BaseStyle -> {
-              ShowStringCharacters -> False, NumberMarks -> False, 
-               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
-          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
-          AutoDelete -> False, 
-          GridBoxItemSize -> {
-           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-          BaselinePosition -> {1, 1}], True -> GridBox[{{
-            PaneBox[
-             ButtonBox[
-              DynamicBox[
-               FEPrivate`FrontEndResource["FEBitmaps", "SummaryBoxCloser"]], 
-              ButtonFunction :> (Typeset`open$$ = False), Appearance -> None, 
-              BaseStyle -> {}, Evaluator -> Automatic, Method -> 
-              "Preemptive"], Alignment -> {Center, Center}, ImageSize -> 
-             Dynamic[{
-               Automatic, 
-                3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
-                 Magnification])}]], 
-            FrameBox[
-             StyleBox["\"\[WarningSign]\"", 
-              Directive["Message", 35], StripOnInput -> False], 
-             ContentPadding -> False, FrameStyle -> None, 
-             FrameMargins -> {{0, 0}, {0, 0}}, StripOnInput -> False], 
-            GridBox[{{
-               TagBox[
-                GridBox[{{
-                   TagBox["\"Message: \"", "SummaryItemAnnotation"], 
-                   "\[InvisibleSpace]", 
-                   TagBox[
-                   "\"Could not connect to \
-\\!\\(\\*TagBox[\\\"\\\\\\\"http://localhost:5555/api/task/send-task/tasks.\
-pht_run\\\\\\\"\\\", Function[Short[Slot[1], 5]]]\\).\"", "SummaryItem"]}}, 
-                 GridBoxItemSize -> {"Columns" -> {6.5, All, Automatic}}, 
-                 GridBoxAlignment -> {"Columns" -> {{Left}}}, 
-                 GridBoxSpacings -> {"Columns" -> {{0}}}], "SummaryItem"]}, {
-               TagBox[
-                GridBox[{{
-                   TagBox["\"Tag: \"", "SummaryItemAnnotation"], 
-                   "\[InvisibleSpace]", 
-                   TagBox["\"ConnectionFailure\"", "SummaryItem"]}}, 
-                 GridBoxItemSize -> {"Columns" -> {6.5, All, Automatic}}, 
-                 GridBoxAlignment -> {"Columns" -> {{Left}}}, 
-                 GridBoxSpacings -> {"Columns" -> {{0}}}], "SummaryItem"]}, {
-               RowBox[{
-                 TagBox[
-                  TemplateBox[{"\"URL\"", "\": \""}, "RowDefault"], 
-                  "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                 TagBox[
-                  TagBox[
-                  "\"http://localhost:5555/api/task/send-task/tasks.pht_run\"\
-", HoldForm], "SummaryItem"]}]}, {
-               RowBox[{
-                 TagBox[
-                  TemplateBox[{"\"HTTPRequest\"", "\": \""}, "RowDefault"], 
-                  "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                 TagBox[
-                  TagBox[
-                   InterpretationBox[
-                    RowBox[{
-                    TagBox["HTTPRequest", "SummaryHead"], "[", 
-                    
-                    DynamicModuleBox[{
-                    Typeset`open$$ = False, Typeset`embedState$$ = "Ready"}, 
-                    TemplateBox[{
-                    PaneSelectorBox[{False -> GridBox[{{
-                    GraphicsBox[{
-                    RGBColor[1, 0.5, 0], 
-                    DiskBox[{0, 0}], 
-                    InsetBox[
-                    FormBox[
-                    StyleBox["\"POST\"", 
-                    Directive[9, 
-                    GrayLevel[1], Bold], StripOnInput -> False], 
-                    TraditionalForm], 
-                    Scaled[{0.53, 0.48}]]}, ImageSize -> 
-                    Dynamic[{Automatic, (3 CurrentValue["FontCapHeight"])/
-                    AbsoluteCurrentValue[Magnification]}], Background -> 
-                    None], 
-                    GridBox[{{
-                    RowBox[{
-                    TagBox["\"URL: \"", "SummaryItemAnnotation"], 
-                    "\[InvisibleSpace]", 
-                    TagBox[
-                    TemplateBox[{
-                    TagBox[
-                    "\"http://localhost:5555/api/task/send-task/tasks.pht_run\
-\"", Short], "http://localhost:5555/api/task/send-task/tasks.pht_run"}, 
-                    "HyperlinkURL"], "SummaryItem"]}]}, {
-                    RowBox[{
-                    TagBox["\"ContentType: \"", "SummaryItemAnnotation"], 
-                    "\[InvisibleSpace]", 
-                    TagBox[
-                    "\"application/json;charset=utf-8\"", "SummaryItem"]}]}}, 
-                    GridBoxAlignment -> {
-                    "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
-                    AutoDelete -> False, 
-                    GridBoxItemSize -> {
-                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-                    GridBoxSpacings -> {
-                    "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
-                    BaseStyle -> {
-                    ShowStringCharacters -> False, NumberMarks -> False, 
-                    PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
-                    GridBoxAlignment -> {
-                    "Columns" -> {{Left}}, "Rows" -> {{Top}}}, AutoDelete -> 
-                    False, GridBoxItemSize -> {
-                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-                    BaselinePosition -> {1, 1}], True -> GridBox[{{
-                    GraphicsBox[{
-                    RGBColor[1, 0.5, 0], 
-                    DiskBox[{0, 0}], 
-                    InsetBox[
-                    FormBox[
-                    StyleBox["\"POST\"", 
-                    Directive[9, 
-                    GrayLevel[1], Bold], StripOnInput -> False], 
-                    TraditionalForm], 
-                    Scaled[{0.53, 0.48}]]}, ImageSize -> 
-                    Dynamic[{Automatic, (3 CurrentValue["FontCapHeight"])/
-                    AbsoluteCurrentValue[Magnification]}], Background -> 
-                    None], 
-                    GridBox[{{
-                    RowBox[{
-                    TagBox["\"URL: \"", "SummaryItemAnnotation"], 
-                    "\[InvisibleSpace]", 
-                    TagBox[
-                    TemplateBox[{
-                    TagBox[
-                    "\"http://localhost:5555/api/task/send-task/tasks.pht_run\
-\"", Short], "http://localhost:5555/api/task/send-task/tasks.pht_run"}, 
-                    "HyperlinkURL"], "SummaryItem"]}]}, {
-                    RowBox[{
-                    TagBox["\"ContentType: \"", "SummaryItemAnnotation"], 
-                    "\[InvisibleSpace]", 
-                    TagBox[
-                    "\"application/json;charset=utf-8\"", "SummaryItem"]}]}}, 
-                    GridBoxAlignment -> {
-                    "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
-                    AutoDelete -> False, 
-                    GridBoxItemSize -> {
-                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-                    GridBoxSpacings -> {
-                    "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
-                    BaseStyle -> {
-                    ShowStringCharacters -> False, NumberMarks -> False, 
-                    PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
-                    GridBoxAlignment -> {
-                    "Columns" -> {{Left}}, "Rows" -> {{Top}}}, AutoDelete -> 
-                    False, GridBoxItemSize -> {
-                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-                    BaselinePosition -> {1, 1}]}, 
-                    Dynamic[Typeset`open$$], ImageSize -> Automatic]}, 
-                    "SummaryPanel"], DynamicModuleValues :> {}], "]"}], 
-                    HTTPRequest[
-                    "http://localhost:5555/api/task/send-task/tasks.pht_run", \
-<|"Method" -> "POST", 
-                    "Headers" -> <|
-                    "Accept" -> "application/json", "Accept-Encoding" -> 
-                    "gzip, deflate, compress", "Content-Type" -> 
-                    "application/json; charset=utf-8", "Authorization" -> 
-                    "Basic bGlyb246MTIz"|>, "Body" -> 
-                    "{\n\t\"args\":[\n\t\t{\n\t\t\t\
-\"dataDir\":\"L:\\\\Carto_Recording_13\\\\Carto V8 Phase 3\\\\TPI field \
-investigations\\\\274554\\\\Recordings\\\\2025.06.05_10.38.14.357\",\n\t\t\t\
-\"label\":\"case001\",\n\t\t\t\"enable_traces\":[\n\t\t\t\t\
-\"TraceTTAlgUpdate2\",\n\t\t\t\t\"TraceBCSystem\"\n\t\t\t]\n\t\t}\n\t]\n}"|>],
-                     Selectable -> False, Editable -> False, 
-                    SelectWithContents -> True], HoldForm], 
-                  "SummaryItem"]}]}, {
-               RowBox[{
-                 TagBox[
-                  TemplateBox[{"\"Counter\"", "\": \""}, "RowDefault"], 
-                  "SummaryItemAnnotation"], "\[InvisibleSpace]", 
-                 TagBox[
-                  TagBox["1", HoldForm], "SummaryItem"]}]}}, 
-             GridBoxAlignment -> {
-              "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, AutoDelete -> 
-             False, GridBoxItemSize -> {
-              "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-             GridBoxSpacings -> {"Columns" -> {{2}}, "Rows" -> {{Automatic}}},
-              BaseStyle -> {
-              ShowStringCharacters -> False, NumberMarks -> False, 
-               PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
-          GridBoxAlignment -> {"Columns" -> {{Left}}, "Rows" -> {{Top}}}, 
-          AutoDelete -> False, 
-          GridBoxItemSize -> {
-           "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-          BaselinePosition -> {1, 1}]}, 
-       Dynamic[Typeset`open$$], ImageSize -> Automatic]},
-     "SummaryPanel"],
-    DynamicModuleValues:>{}], "]"}],
-  Failure[
-  "ConnectionFailure", <|
-   "MessageTemplate" :> MessageName[URLRead, "iurl"], 
-    "MessageParameters" -> {
-     "http://localhost:5555/api/task/send-task/tasks.pht_run"}, "URL" -> 
-    "http://localhost:5555/api/task/send-task/tasks.pht_run", "HTTPRequest" -> 
-    HTTPRequest[
-     "http://localhost:5555/api/task/send-task/tasks.pht_run", <|
-      "Method" -> "POST", 
-       "Headers" -> <|
-        "Accept" -> "application/json", "Accept-Encoding" -> 
-         "gzip, deflate, compress", "Content-Type" -> 
-         "application/json; charset=utf-8", "Authorization" -> 
-         "Basic bGlyb246MTIz"|>, "Body" -> 
-       "{\n\t\"args\":[\n\t\t{\n\t\t\t\
-\"dataDir\":\"L:\\\\Carto_Recording_13\\\\Carto V8 Phase 3\\\\TPI field \
-investigations\\\\274554\\\\Recordings\\\\2025.06.05_10.38.14.357\",\n\t\t\t\
-\"label\":\"case001\",\n\t\t\t\"enable_traces\":[\n\t\t\t\t\
-\"TraceTTAlgUpdate2\",\n\t\t\t\t\"TraceBCSystem\"\n\t\t\t]\n\t\t}\n\t]\n}"|>],
-     "Counter" -> 1|>],
-  Editable->False,
-  SelectWithContents->True,
-  Selectable->False]], "Output",
+Cell[BoxData["\<\"{\\\"task-id\\\": \
+\\\"accf9562-ab3e-4824-bcb7-018234adf793\\\", \\\"state\\\": \\\"PENDING\\\"}\
+\"\>"], "Output",
  CellChangeTimes->{{3.963551251802294*^9, 3.9635512648014164`*^9}, 
    3.9635513890617943`*^9, {3.9635514387921314`*^9, 3.9635514695296097`*^9}, {
    3.963551553933052*^9, 3.96355157518985*^9}, 3.963551816020479*^9, 
@@ -820,9 +552,109 @@ investigations\\\\274554\\\\Recordings\\\\2025.06.05_10.38.14.357\",\n\t\t\t\
    3.963560180381901*^9, 3.963560215912985*^9, 3.9635609165865383`*^9, 
    3.9635610295227833`*^9, {3.963561368695593*^9, 3.9635613836068363`*^9}, 
    3.9635689786234703`*^9, {3.9635690194463177`*^9, 3.9635690228873615`*^9}, 
-   3.9635710051472073`*^9, 3.963632271338291*^9},
- CellLabel->"Out[7]=",ExpressionUUID->"71eb5ce2-e549-924c-b729-3ce6110a8db7"]
-}, Open  ]]
+   3.9635710051472073`*^9, {3.963632271338291*^9, 3.9636322910825977`*^9}, 
+   3.9636380213720665`*^9, 3.9636389820348186`*^9, 3.9636525625019264`*^9, 
+   3.963652650276268*^9},
+ CellLabel->"Out[91]=",ExpressionUUID->"1820cba6-3e44-1341-bfc8-e770921324e2"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"runPHT", "[", 
+   RowBox[{"dataDir_", ",", " ", "label_", ",", " ", "enableTraces_"}], "]"}],
+   ":=", " ", 
+  RowBox[{"Module", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+     "url", ",", " ", "credentials", ",", " ", "headers", ",", " ", "body", 
+      ",", " ", "request"}], "}"}], ",", " ", "\[IndentingNewLine]", 
+    "\[IndentingNewLine]", 
+    RowBox[{"(*", " ", 
+     RowBox[{"Define", " ", "the", " ", "URL", " ", "and", " ", "endpoint"}], 
+     " ", "*)"}], "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{
+     "url", "=", 
+      "\"\<http://wdcoretech02:5555/api/task/send-task/tasks.pht_run\>\""}], 
+     ";", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+     RowBox[{"(*", " ", 
+      RowBox[{
+       RowBox[{"Create", " ", "the", " ", "base64"}], "-", 
+       RowBox[{"encoded", " ", "credentials"}]}], " ", "*)"}], 
+     "\[IndentingNewLine]", 
+     RowBox[{"credentials", "=", 
+      RowBox[{"BaseEncode", "[", 
+       RowBox[{
+        RowBox[{"ByteArray", "[", 
+         RowBox[{"ToCharacterCode", "[", "\"\<liron:123\>\"", "]"}], "]"}], 
+        ",", "\"\<Base64\>\""}], "]"}]}], ";", "\[IndentingNewLine]", 
+     "\[IndentingNewLine]", 
+     RowBox[{"(*", " ", 
+      RowBox[{
+      "Set", " ", "up", " ", "the", " ", "headers", " ", "with", " ", "basic",
+        " ", "authentication"}], " ", "*)"}], "\[IndentingNewLine]", 
+     RowBox[{"headers", "=", 
+      RowBox[{"<|", "\[IndentingNewLine]", "   ", 
+       RowBox[{
+        RowBox[{"\"\<Accept\>\"", "->", "\"\<application/json\>\""}], ",", 
+        "\[IndentingNewLine]", "   ", 
+        RowBox[{
+        "\"\<Accept-Encoding\>\"", "->", "\"\<gzip, deflate, compress\>\""}], 
+        ",", "\[IndentingNewLine]", "   ", 
+        RowBox[{
+        "\"\<Content-Type\>\"", "->", 
+         "\"\<application/json; charset=utf-8\>\""}], ",", 
+        "\[IndentingNewLine]", "   ", 
+        RowBox[{"\"\<Authorization\>\"", "->", 
+         RowBox[{"\"\<Basic \>\"", " ", "<>", " ", "credentials"}]}]}], 
+       "\[IndentingNewLine]", "|>"}]}], ";", "\[IndentingNewLine]", 
+     "\[IndentingNewLine]", 
+     RowBox[{"(*", " ", 
+      RowBox[{
+      "Define", " ", "the", " ", "body", " ", "of", " ", "the", " ", 
+       "request"}], " ", "*)"}], "\[IndentingNewLine]", 
+     RowBox[{"body", "=", 
+      RowBox[{"ExportString", "[", 
+       RowBox[{
+        RowBox[{"<|", 
+         RowBox[{"\"\<args\>\"", "->", " ", 
+          RowBox[{"{", "\[IndentingNewLine]", "\[IndentingNewLine]", " ", 
+           RowBox[{"<|", 
+            RowBox[{
+             RowBox[{"\"\<dataDir\>\"", "->", " ", "dataDir"}], ",", 
+             "\[IndentingNewLine]", 
+             RowBox[{"\"\<label\>\"", "->", "Labeled"}], ",", " ", 
+             "\[IndentingNewLine]", 
+             RowBox[{"\"\<enable_traces\>\"", "->", " ", "enableTraces"}]}], 
+            "|>"}], "\[IndentingNewLine]", "}"}]}], "\[IndentingNewLine]", 
+         "|>"}], ",", "\"\<JSON\>\""}], "]"}]}], ";", "\n", 
+     "\[IndentingNewLine]", "\[IndentingNewLine]", 
+     RowBox[{"(*", " ", 
+      RowBox[{
+      "Create", " ", "and", " ", "execute", " ", "the", " ", "HTTP", " ", 
+       "request"}], " ", "*)"}], "\[IndentingNewLine]", 
+     RowBox[{"request", "=", 
+      RowBox[{"HTTPRequest", "[", 
+       RowBox[{"url", ",", 
+        RowBox[{"<|", "\[IndentingNewLine]", "   ", 
+         RowBox[{
+          RowBox[{"\"\<Method\>\"", "->", "\"\<POST\>\""}], ",", 
+          "\[IndentingNewLine]", "   ", 
+          RowBox[{"\"\<Headers\>\"", "->", "headers"}], ",", 
+          "\[IndentingNewLine]", "   ", 
+          RowBox[{"\"\<Body\>\"", "->", "body"}]}], "\[IndentingNewLine]", 
+         "|>"}]}], "]"}]}], ";", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+     RowBox[{"(*", " ", 
+      RowBox[{
+      "Execute", " ", "the", " ", "request", " ", "and", " ", "get", " ", 
+       "the", " ", "response"}], " ", "*)"}], "\[IndentingNewLine]", 
+     RowBox[{"URLRead", "[", 
+      RowBox[{"request", ",", "\"\<Body\>\""}], "]"}]}]}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", "]"}]}]], "Input",
+ CellChangeTimes->{{3.9637231643284664`*^9, 
+  3.963723284047804*^9}},ExpressionUUID->"0279053d-5451-cc43-ba15-\
+c97213fb3c16"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -875,8 +707,8 @@ Cell[BoxData[
        "\[IndentingNewLine]", "   ", 
        RowBox[{"\"\<Authorization\>\"", "->", 
         RowBox[{"\"\<Basic \>\"", " ", "<>", " ", "credentials"}]}]}], 
-      "\[IndentingNewLine]", "|>"}]}], ";"}], "\[IndentingNewLine]", 
-   "\[IndentingNewLine]", "\n", "\[IndentingNewLine]", 
+      "\[IndentingNewLine]", "|>"}]}], ";"}], "\[IndentingNewLine]", "\n", 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
    RowBox[{"(*", " ", 
     RowBox[{
     "Create", " ", "and", " ", "execute", " ", "the", " ", "HTTP", " ", 
@@ -916,12 +748,184 @@ Cell[BoxData[
    3.9635611029212837`*^9, 3.9635611269196625`*^9}, {3.963561511245119*^9, 
    3.9635615122305145`*^9}, 3.9635689601731052`*^9, {3.963568995048744*^9, 
    3.963569014403475*^9}, {3.963569658718992*^9, 3.9635697106957855`*^9}},
- CellLabel->"In[91]:=",ExpressionUUID->"6cf348cf-ef5e-c545-992c-157a6b982921"],
+ CellLabel->"In[98]:=",ExpressionUUID->"6cf348cf-ef5e-c545-992c-157a6b982921"],
 
-Cell[BoxData["\<\"{}\"\>"], "Output",
+Cell[BoxData["\<\"{\\\"e77b3a9c-45c5-41b9-bbb8-0fa5916ea998\\\": \
+{\\\"uuid\\\": \\\"e77b3a9c-45c5-41b9-bbb8-0fa5916ea998\\\", \\\"name\\\": \\\
+\"tasks.dli_read\\\", \\\"state\\\": \\\"FAILURE\\\", \\\"received\\\": \
+1754663744.4218907, \\\"sent\\\": null, \\\"started\\\": 1754663744.4244952, \
+\\\"rejected\\\": null, \\\"succeeded\\\": null, \\\"failed\\\": \
+1754669434.6685643, \\\"retried\\\": null, \\\"revoked\\\": null, \
+\\\"args\\\": \\\"[{'version': '8.1.1.944', 'path': \
+'L:\\\\\\\\Carto_Recording_13\\\\\\\\Carto V8 Phase 3\\\\\\\\TPI field \
+investigations\\\\\\\\274554\\\\\\\\Recordings\\\\\\\\2025.06.05_10.38.14.357'\
+, 'stream_label': 'tracettalgupdate2', 'output_path': \
+'D:\\\\\\\\Liron\\\\\\\\temp', 'max_workers': 4}]\\\", \\\"kwargs\\\": \\\"{}\
+\\\", \\\"eta\\\": null, \\\"expires\\\": null, \\\"retries\\\": 0, \
+\\\"result\\\": null, \\\"exception\\\": \\\"FileNotFoundError(2, 'No such \
+file or directory')\\\", \\\"timestamp\\\": 1754669434.6685643, \\\"runtime\\\
+\": null, \\\"traceback\\\": \\\"Traceback (most recent call last):\\\\n  \
+File \\\\\\\"E:\\\\\\\\Liron\\\\\\\\case_processor\\\\\\\\.venv\\\\\\\\Lib\\\\\
+\\\\site-packages\\\\\\\\celery\\\\\\\\app\\\\\\\\trace.py\\\\\\\", line 453, \
+in trace_task\\\\n    R = retval = fun(*args, **kwargs)\\\\n                 \
+~~~^^^^^^^^^^^^^^^^^\\\\n  File \\\\\\\"E:\\\\\\\\Liron\\\\\\\\case_processor\
+\\\\\\\\.venv\\\\\\\\Lib\\\\\\\\site-packages\\\\\\\\celery\\\\\\\\app\\\\\\\\\
+trace.py\\\\\\\", line 736, in __protected_call__\\\\n    return \
+self.run(*args, **kwargs)\\\\n           ~~~~~~~~^^^^^^^^^^^^^^^^^\\\\n  File \
+\\\\\\\"E:\\\\\\\\Liron\\\\\\\\case_processor\\\\\\\\celery_tasks.py\\\\\\\", \
+line 104, in dli_read\\\\n    with open(output_filename, 'w') as fp:\\\\n     \
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^\\\\nFileNotFoundError: [Errno 2] No such file \
+or directory: \
+'D:\\\\\\\\\\\\\\\\Liron\\\\\\\\\\\\\\\\temp\\\\\\\\\\\\\\\\tracettalgupdate2[\
+None].json'\\\\n\\\", \\\"exchange\\\": null, \\\"routing_key\\\": null, \
+\\\"clock\\\": 36245, \\\"client\\\": null, \\\"root\\\": \
+\\\"e77b3a9c-45c5-41b9-bbb8-0fa5916ea998\\\", \\\"root_id\\\": \
+\\\"e77b3a9c-45c5-41b9-bbb8-0fa5916ea998\\\", \\\"parent\\\": null, \
+\\\"parent_id\\\": null, \\\"children\\\": [], \\\"worker\\\": \
+\\\"celery@WBWIILPHYSICS\\\"}, \\\"accf9562-ab3e-4824-bcb7-018234adf793\\\": \
+{\\\"uuid\\\": \\\"accf9562-ab3e-4824-bcb7-018234adf793\\\", \\\"name\\\": \\\
+\"tasks.pht_run\\\", \\\"state\\\": \\\"SUCCESS\\\", \\\"received\\\": \
+1754663850.199872, \\\"sent\\\": null, \\\"started\\\": 1754663850.2019012, \
+\\\"rejected\\\": null, \\\"succeeded\\\": 1754668757.2762086, \
+\\\"failed\\\": null, \\\"retried\\\": null, \\\"revoked\\\": null, \
+\\\"args\\\": \\\"[{'dataDir': 'L:\\\\\\\\Carto_Recording_13\\\\\\\\Carto V8 \
+Phase 3\\\\\\\\TPI field investigations\\\\\\\\274554\\\\\\\\Recordings\\\\\\\
+\\2025.06.05_10.38.14.357', 'label': 'case003', 'enable_traces': \
+['TraceTTAlgUpdate2', 'TraceBCSystem']}]\\\", \\\"kwargs\\\": \\\"{}\\\", \
+\\\"eta\\\": null, \\\"expires\\\": null, \\\"retries\\\": 0, \\\"result\\\": \
+\\\"True\\\", \\\"exception\\\": null, \\\"timestamp\\\": 1754668757.2762086, \
+\\\"runtime\\\": 4907.05691819964, \\\"traceback\\\": null, \\\"exchange\\\": \
+null, \\\"routing_key\\\": null, \\\"clock\\\": 34833, \\\"client\\\": null, \
+\\\"root\\\": \\\"accf9562-ab3e-4824-bcb7-018234adf793\\\", \\\"root_id\\\": \
+\\\"accf9562-ab3e-4824-bcb7-018234adf793\\\", \\\"parent\\\": null, \
+\\\"parent_id\\\": null, \\\"children\\\": [], \\\"worker\\\": \
+\\\"celery@WDCORETECH02\\\"}, \\\"5a2a7bb5-306a-4795-b863-6283098b1974\\\": {\
+\\\"uuid\\\": \\\"5a2a7bb5-306a-4795-b863-6283098b1974\\\", \\\"name\\\": \
+\\\"tasks.pht_run\\\", \\\"state\\\": \\\"SUCCESS\\\", \\\"received\\\": \
+1754663762.4347503, \\\"sent\\\": null, \\\"started\\\": 1754663762.4376566, \
+\\\"rejected\\\": null, \\\"succeeded\\\": 1754665294.5753286, \
+\\\"failed\\\": null, \\\"retried\\\": null, \\\"revoked\\\": null, \
+\\\"args\\\": \\\"[{'dataDir': 'L:\\\\\\\\Carto_Recording_13\\\\\\\\Carto V8 \
+Phase 3\\\\\\\\TPI field investigations\\\\\\\\274554\\\\\\\\Recordings\\\\\\\
+\\2025.06.05_10.38.14.357', 'label': 'case002', 'enable_traces': \
+['TraceTTAlgUpdate2', 'TraceBCSystem']}]\\\", \\\"kwargs\\\": \\\"{}\\\", \
+\\\"eta\\\": null, \\\"expires\\\": null, \\\"retries\\\": 0, \\\"result\\\": \
+\\\"True\\\", \\\"exception\\\": null, \\\"timestamp\\\": 1754665294.5753286, \
+\\\"runtime\\\": 1532.1260822999757, \\\"traceback\\\": null, \
+\\\"exchange\\\": null, \\\"routing_key\\\": null, \\\"clock\\\": 27399, \
+\\\"client\\\": null, \\\"root\\\": \
+\\\"5a2a7bb5-306a-4795-b863-6283098b1974\\\", \\\"root_id\\\": \
+\\\"5a2a7bb5-306a-4795-b863-6283098b1974\\\", \\\"parent\\\": null, \
+\\\"parent_id\\\": null, \\\"children\\\": [], \\\"worker\\\": \
+\\\"celery@WBWIILPHYSICS\\\"}, \\\"2f4b44d0-4010-43b3-8d16-b1c575ccf810\\\": \
+{\\\"uuid\\\": \\\"2f4b44d0-4010-43b3-8d16-b1c575ccf810\\\", \\\"name\\\": \\\
+\"tasks.dli_read\\\", \\\"state\\\": \\\"FAILURE\\\", \\\"received\\\": \
+1754663724.8741663, \\\"sent\\\": null, \\\"started\\\": 1754663724.8767786, \
+\\\"rejected\\\": null, \\\"succeeded\\\": null, \\\"failed\\\": \
+1754663727.7278762, \\\"retried\\\": null, \\\"revoked\\\": null, \
+\\\"args\\\": \\\"[{'version': '8.1.1.944', 'path': \
+'L:\\\\\\\\Carto_Recording_13\\\\\\\\Carto V8 Phase 3\\\\\\\\TPI field \
+investigations\\\\\\\\274554\\\\\\\\Recordings\\\\\\\\2025.06.05_10.38.14.357'\
+, 'stream_label': 'tracettalgupdate2', 'output_path': \
+'D:\\\\\\\\Liron\\\\\\\\temp', 'max_workers': 4}]\\\", \\\"kwargs\\\": \\\"{}\
+\\\", \\\"eta\\\": null, \\\"expires\\\": null, \\\"retries\\\": 0, \
+\\\"result\\\": null, \\\"exception\\\": \\\"ModuleNotFoundError(\\\\\\\"No \
+module named 'DliNetInterface'\\\\\\\")\\\", \\\"timestamp\\\": \
+1754663727.7278762, \\\"runtime\\\": null, \\\"traceback\\\": \\\"Traceback \
+(most recent call last):\\\\n  File \
+\\\\\\\"E:\\\\\\\\Liron\\\\\\\\case_processor\\\\\\\\.venv\\\\\\\\Lib\\\\\\\\\
+site-packages\\\\\\\\celery\\\\\\\\app\\\\\\\\trace.py\\\\\\\", line 453, in \
+trace_task\\\\n    R = retval = fun(*args, **kwargs)\\\\n                 \
+~~~^^^^^^^^^^^^^^^^^\\\\n  File \\\\\\\"E:\\\\\\\\Liron\\\\\\\\case_processor\
+\\\\\\\\.venv\\\\\\\\Lib\\\\\\\\site-packages\\\\\\\\celery\\\\\\\\app\\\\\\\\\
+trace.py\\\\\\\", line 736, in __protected_call__\\\\n    return \
+self.run(*args, **kwargs)\\\\n           ~~~~~~~~^^^^^^^^^^^^^^^^^\\\\n  File \
+\\\\\\\"E:\\\\\\\\Liron\\\\\\\\case_processor\\\\\\\\celery_tasks.py\\\\\\\", \
+line 92, in dli_read\\\\n    dli.loadDli()\\\\n    ~~~~~~~~~~~^^\\\\n  File \
+\\\\\\\"E:\\\\\\\\Liron\\\\\\\\case_processor\\\\\\\\pyDli\\\\\\\\pyDli.py\\\\\
+\\\", line 83, in loadDli\\\\n    from DliNetInterface import DliReader # \
+type: ignore\\\\n    \
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\\\nModuleNotFoundError: No module \
+named 'DliNetInterface'\\\\n\\\", \\\"exchange\\\": null, \
+\\\"routing_key\\\": null, \\\"clock\\\": 24052, \\\"client\\\": null, \
+\\\"root\\\": \\\"2f4b44d0-4010-43b3-8d16-b1c575ccf810\\\", \\\"root_id\\\": \
+\\\"2f4b44d0-4010-43b3-8d16-b1c575ccf810\\\", \\\"parent\\\": null, \
+\\\"parent_id\\\": null, \\\"children\\\": [], \\\"worker\\\": \
+\\\"celery@WBWIILPHYSICS\\\"}, \\\"a3f86fa5-ce6d-4c62-a6d3-79e87cd00ab8\\\": \
+{\\\"uuid\\\": \\\"a3f86fa5-ce6d-4c62-a6d3-79e87cd00ab8\\\", \\\"name\\\": \
+null, \\\"state\\\": \\\"FAILURE\\\", \\\"received\\\": null, \\\"sent\\\": \
+null, \\\"started\\\": null, \\\"rejected\\\": null, \\\"succeeded\\\": null, \
+\\\"failed\\\": 1754663812.9447713, \\\"retried\\\": null, \\\"revoked\\\": \
+null, \\\"args\\\": null, \\\"kwargs\\\": null, \\\"eta\\\": null, \
+\\\"expires\\\": null, \\\"retries\\\": null, \\\"result\\\": null, \
+\\\"exception\\\": \\\"TypeError('Object of type Tuple[Single,Single] is not \
+JSON serializable')\\\", \\\"timestamp\\\": 1754663812.9447713, \\\"runtime\\\
+\": null, \\\"traceback\\\": \\\"Traceback (most recent call last):\\\\n  \
+File \\\\\\\"D:\\\\\\\\Liron\\\\\\\\Python\\\\\\\\Projects\\\\\\\\case_\
+processor\\\\\\\\.venv\\\\\\\\Lib\\\\\\\\site-packages\\\\\\\\celery\\\\\\\\\
+app\\\\\\\\trace.py\\\\\\\", line 453, in trace_task\\\\n    R = retval = \
+fun(*args, **kwargs)\\\\n                 ~~~^^^^^^^^^^^^^^^^^\\\\n  File \
+\\\\\\\"D:\\\\\\\\Liron\\\\\\\\Python\\\\\\\\Projects\\\\\\\\case_processor\\\
+\\\\\\.venv\\\\\\\\Lib\\\\\\\\site-packages\\\\\\\\celery\\\\\\\\app\\\\\\\\\
+trace.py\\\\\\\", line 736, in __protected_call__\\\\n    return \
+self.run(*args, **kwargs)\\\\n           ~~~~~~~~^^^^^^^^^^^^^^^^^\\\\n  File \
+\\\\\\\"D:\\\\\\\\Liron\\\\\\\\Python\\\\\\\\Projects\\\\\\\\case_processor\\\
+\\\\\\celery_tasks.py\\\\\\\", line 105, in dli_read\\\\n    \
+json.dump(res_dict, fp)\\\\n    ~~~~~~~~~^^^^^^^^^^^^^^\\\\n  File \\\\\\\"C:\
+\\\\\\\\Users\\\\\\\\lmizrahi\\\\\\\\AppData\\\\\\\\Roaming\\\\\\\\uv\\\\\\\\\
+python\\\\\\\\cpython-3.13.2-windows-x86_64-none\\\\\\\\Lib\\\\\\\\json\\\\\\\
+\\__init__.py\\\\\\\", line 179, in dump\\\\n    for chunk in iterable:\\\\n  \
+               ^^^^^^^^\\\\n  File \
+\\\\\\\"C:\\\\\\\\Users\\\\\\\\lmizrahi\\\\\\\\AppData\\\\\\\\Roaming\\\\\\\\\
+uv\\\\\\\\python\\\\\\\\cpython-3.13.2-windows-x86_64-none\\\\\\\\Lib\\\\\\\\\
+json\\\\\\\\encoder.py\\\\\\\", line 430, in _iterencode\\\\n    yield from \
+_iterencode_list(o, _current_indent_level)\\\\n  File \\\\\\\"C:\\\\\\\\Users\
+\\\\\\\\lmizrahi\\\\\\\\AppData\\\\\\\\Roaming\\\\\\\\uv\\\\\\\\python\\\\\\\\\
+cpython-3.13.2-windows-x86_64-none\\\\\\\\Lib\\\\\\\\json\\\\\\\\encoder.py\\\
+\\\\\", line 326, in _iterencode_list\\\\n    yield from chunks\\\\n  File \\\
+\\\\\"C:\\\\\\\\Users\\\\\\\\lmizrahi\\\\\\\\AppData\\\\\\\\Roaming\\\\\\\\uv\
+\\\\\\\\python\\\\\\\\cpython-3.13.2-windows-x86_64-none\\\\\\\\Lib\\\\\\\\\
+json\\\\\\\\encoder.py\\\\\\\", line 406, in _iterencode_dict\\\\n    yield \
+from chunks\\\\n  File \\\\\\\"C:\\\\\\\\Users\\\\\\\\lmizrahi\\\\\\\\AppData\
+\\\\\\\\Roaming\\\\\\\\uv\\\\\\\\python\\\\\\\\cpython-3.13.2-windows-x86_64-\
+none\\\\\\\\Lib\\\\\\\\json\\\\\\\\encoder.py\\\\\\\", line 326, in \
+_iterencode_list\\\\n    yield from chunks\\\\n  File \\\\\\\"C:\\\\\\\\Users\
+\\\\\\\\lmizrahi\\\\\\\\AppData\\\\\\\\Roaming\\\\\\\\uv\\\\\\\\python\\\\\\\\\
+cpython-3.13.2-windows-x86_64-none\\\\\\\\Lib\\\\\\\\json\\\\\\\\encoder.py\\\
+\\\\\", line 406, in _iterencode_dict\\\\n    yield from chunks\\\\n  File \\\
+\\\\\"C:\\\\\\\\Users\\\\\\\\lmizrahi\\\\\\\\AppData\\\\\\\\Roaming\\\\\\\\uv\
+\\\\\\\\python\\\\\\\\cpython-3.13.2-windows-x86_64-none\\\\\\\\Lib\\\\\\\\\
+json\\\\\\\\encoder.py\\\\\\\", line 406, in _iterencode_dict\\\\n    yield \
+from chunks\\\\n  File \\\\\\\"C:\\\\\\\\Users\\\\\\\\lmizrahi\\\\\\\\AppData\
+\\\\\\\\Roaming\\\\\\\\uv\\\\\\\\python\\\\\\\\cpython-3.13.2-windows-x86_64-\
+none\\\\\\\\Lib\\\\\\\\json\\\\\\\\encoder.py\\\\\\\", line 439, in \
+_iterencode\\\\n    o = _default(o)\\\\n  File \
+\\\\\\\"C:\\\\\\\\Users\\\\\\\\lmizrahi\\\\\\\\AppData\\\\\\\\Roaming\\\\\\\\\
+uv\\\\\\\\python\\\\\\\\cpython-3.13.2-windows-x86_64-none\\\\\\\\Lib\\\\\\\\\
+json\\\\\\\\encoder.py\\\\\\\", line 180, in default\\\\n    raise \
+TypeError(f'Object of type {o.__class__.__name__} '\\\\n                    \
+f'is not JSON serializable')\\\\nTypeError: Object of type \
+Tuple[Single,Single] is not JSON serializable\\\\n\\\", \\\"exchange\\\": \
+null, \\\"routing_key\\\": null, \\\"clock\\\": 7797, \\\"client\\\": null, \
+\\\"root\\\": null, \\\"root_id\\\": null, \\\"parent\\\": null, \
+\\\"parent_id\\\": null, \\\"children\\\": [], \\\"worker\\\": \
+\\\"celery@WDCORETECH02\\\"}, \\\"44884533-b90a-475d-9175-71b2ace0e69c\\\": {\
+\\\"uuid\\\": \\\"44884533-b90a-475d-9175-71b2ace0e69c\\\", \\\"name\\\": \
+null, \\\"state\\\": \\\"SUCCESS\\\", \\\"received\\\": null, \\\"sent\\\": \
+null, \\\"started\\\": null, \\\"rejected\\\": null, \\\"succeeded\\\": \
+1754663812.9361088, \\\"failed\\\": null, \\\"retried\\\": null, \
+\\\"revoked\\\": null, \\\"args\\\": null, \\\"kwargs\\\": null, \\\"eta\\\": \
+null, \\\"expires\\\": null, \\\"retries\\\": null, \\\"result\\\": \
+\\\"True\\\", \\\"exception\\\": null, \\\"timestamp\\\": 1754663812.9361088, \
+\\\"runtime\\\": 2802.2297374000773, \\\"traceback\\\": null, \
+\\\"exchange\\\": null, \\\"routing_key\\\": null, \\\"clock\\\": 7746, \
+\\\"client\\\": null, \\\"root\\\": null, \\\"root_id\\\": null, \\\"parent\\\
+\": null, \\\"parent_id\\\": null, \\\"children\\\": [], \\\"worker\\\": \
+\\\"celery@WDCORETECH02\\\"}}\"\>"], "Output",
  CellChangeTimes->{{3.9635696809821625`*^9, 3.963569711431175*^9}, 
-   3.963590389450754*^9},
- CellLabel->"Out[96]=",ExpressionUUID->"8e4821b5-d503-fb48-98f4-7ff5524acbf4"]
+   3.963590389450754*^9, 3.9636527641267014`*^9, 3.9637209892222786`*^9},
+ CellLabel->
+  "Out[103]=",ExpressionUUID->"4f081c04-b346-8246-89eb-c211ef1b77f0"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -940,8 +944,9 @@ Cell[BoxData[
 }, Open  ]]
 }, Open  ]]
 },
-WindowSize->{931.1999999999999, 569.4},
-WindowMargins->{{Automatic, -4.7999999999999545`}, {Automatic, 22.2}},
+WindowSize->{918.5999999999999, 644.4},
+WindowMargins->{{
+  Automatic, -1.7999999999999545`}, {-10.799999999999955`, Automatic}},
 FrontEndVersion->"14.1 for Microsoft Windows (64-bit) (July 16, 2024)",
 StyleDefinitions->"Default.nb",
 ExpressionUUID->"53b0eec1-576b-894a-aefc-2f4dbf215123"
@@ -971,27 +976,27 @@ Cell[9154, 233, 802, 11, 32, "Output",ExpressionUUID->"5896d67b-8243-c644-bd1e-9
 Cell[CellGroupData[{
 Cell[10005, 250, 181, 4, 66, "Section",ExpressionUUID->"9d6ed6f8-e437-4744-b9c6-9bc4fdb4dbf4"],
 Cell[CellGroupData[{
-Cell[10211, 258, 5517, 123, 789, "Input",ExpressionUUID->"7d79c277-fa20-7e47-88a8-29c565ae4a5f"],
-Cell[15731, 383, 1267, 19, 32, "Output",ExpressionUUID->"51cb6800-a97a-614a-a25d-a3de650a27ea"]
+Cell[10211, 258, 5597, 124, 789, "Input",ExpressionUUID->"7d79c277-fa20-7e47-88a8-29c565ae4a5f"],
+Cell[15811, 384, 1458, 21, 32, "Output",ExpressionUUID->"e30251f8-6dbd-3448-9371-f99f602cbdee"]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[17047, 408, 198, 3, 66, "Section",ExpressionUUID->"113cbd25-df87-434f-ac3d-89ac3db2e7de"],
+Cell[17318, 411, 198, 3, 66, "Section",ExpressionUUID->"113cbd25-df87-434f-ac3d-89ac3db2e7de"],
 Cell[CellGroupData[{
-Cell[17270, 415, 5266, 115, 713, "Input",ExpressionUUID->"ec3fbd72-d62f-7042-a6ca-af20e3d76f2e"],
-Cell[22539, 532, 427, 10, 26, "Message",ExpressionUUID->"9890af17-9ad9-6d4d-ae03-3833ad5aaec4"],
-Cell[22969, 544, 14412, 279, 59, "Output",ExpressionUUID->"71eb5ce2-e549-924c-b729-3ce6110a8db7"]
-}, Open  ]]
+Cell[17541, 418, 5370, 117, 713, "Input",ExpressionUUID->"ec3fbd72-d62f-7042-a6ca-af20e3d76f2e"],
+Cell[22914, 537, 1428, 20, 32, "Output",ExpressionUUID->"1820cba6-3e44-1341-bfc8-e770921324e2"]
+}, Open  ]],
+Cell[24357, 560, 4205, 96, 713, "Input",ExpressionUUID->"0279053d-5451-cc43-ba15-c97213fb3c16"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[37430, 829, 160, 3, 66, "Section",ExpressionUUID->"d7a885c8-09a1-3944-90a1-ee6268eac1df"],
+Cell[28599, 661, 160, 3, 66, "Section",ExpressionUUID->"d7a885c8-09a1-3944-90a1-ee6268eac1df"],
 Cell[CellGroupData[{
-Cell[37615, 836, 3900, 82, 484, "Input",ExpressionUUID->"6cf348cf-ef5e-c545-992c-157a6b982921"],
-Cell[41518, 920, 210, 3, 32, "Output",ExpressionUUID->"8e4821b5-d503-fb48-98f4-7ff5524acbf4"]
+Cell[28784, 668, 3900, 82, 484, "Input",ExpressionUUID->"6cf348cf-ef5e-c545-992c-157a6b982921"],
+Cell[32687, 752, 12800, 175, 1858, "Output",ExpressionUUID->"4f081c04-b346-8246-89eb-c211ef1b77f0"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[41765, 928, 259, 4, 28, "Input",ExpressionUUID->"501ec20a-f75c-b44c-bb26-9ddc33f5395a"],
-Cell[42027, 934, 255, 4, 51, "Output",ExpressionUUID->"2578b02c-a760-9942-8f44-d4c957f2867a"]
+Cell[45524, 932, 259, 4, 28, "Input",ExpressionUUID->"501ec20a-f75c-b44c-bb26-9ddc33f5395a"],
+Cell[45786, 938, 255, 4, 32, "Output",ExpressionUUID->"2578b02c-a760-9942-8f44-d4c957f2867a"]
 }, Open  ]]
 }, Open  ]]
 }

@@ -72,19 +72,20 @@ def dli_read(self, params: dict):
     print(params)
     required_keys = ['version', 'path', 'stream_label', 'output_path']
     if all(k in params for k in required_keys):
-        # dli = MP_dli(
-        #     version=params.get('version'),
-        #     path=params.get('path'),
-        #     stream_label=params.get('stream_label'),
-        #     tsRange=params.get('tsRange', None),
-        #     max_workers=params.get('max_workers', 1),
-        #     output_path=params.get('output_path')
-        # )
-        # dli.process()  # Process the data
+        
         stream_label = params.get('stream_label')
         output_path = params.get('output_path')
         output_type = params.get('output_type', 'json')
         tsRange=params.get('tsRange', None)
+
+        if not Path(output_path).exists(): 
+            raise 'output_path is not exist'
+        
+        try:
+            with open(Path(output_path).joinpath('test.txt'), 'w') as f: 
+                f.write('.')
+        except: 
+            raise 'output_path is not exaccessableist'
 
         dli = PyDli(caseDir=params.get('path'), 
                     dliVersion = params.get('version', None))
@@ -106,6 +107,8 @@ def dli_read(self, params: dict):
                 elif output_type == 'pk':
                     with open(output_filename, 'wb') as fp:
                         pickle.dump(res_dict, fp)
+
+        
 
         return True
     else:
